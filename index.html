@@ -13,6 +13,8 @@
 <body>
     <header>
 
+
+
         <!-- navbar -->
 
         <div class="container">
@@ -36,8 +38,8 @@
                             <a class="nav-link" href="blog.html">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="login.html">
-                                <button class="yellow-btn">Log In</button>
+                            <a class="nav-link">
+                                <button data-toggle="modal" data-target="#login" class="yellow-btn">Log In</button>
                             </a>
                         </li>
                     </ul>
@@ -47,7 +49,73 @@
         </div>
     </header>
     <main>
-        
+
+        <!-- modal login -->
+
+        <!-- Modal -->
+        <div id="login" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+            <div class="login">
+                <h3 class="text-center">WelCome</h3>
+                <br><div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <form action="">
+                                <input class="form-control" type="email" placeholder="Email Address">
+                                <p></p>
+                                <input class="form-control" type="password" placeholder="Password">
+                                <br>
+                                <button type="button" class="yellow-btn">Log In</button>
+                            </form>
+                            <br>
+                            <br>
+                            <p class="reg">New here ? <a data-toggle="modal" data-target="#registration" data-dismiss="modal">Create an account</a></p>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+        </div>
+
+        <!-- modal registration -->
+
+        <div class="modal fade" id="registration">
+            <div class="modal-dialog">
+                <div class="modal-content">
+            <div class="registration">
+                <h3 class="text-center">Sign Up for Free</h3>
+                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Non
+                    nulla arcu habitant
+                    sollicitudin.</p>
+                <br>
+                <form action="">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 col-12">
+                                <input class="form-control" type="email" placeholder="Email Address">
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-12">
+                                <input class="form-control" type="email" placeholder="Username">
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-12">
+                                <input class="form-control" type="password" placeholder="Password">
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-12">
+                                <input class="form-control" type="password" placeholder="Confirm Password">
+                            </div>
+                            <div class="col-md-12 text-center">
+                                <button type="button" class="yellow-btn">Register</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+        </div>
+
         <!-- introduction -->
 
         <section class="introduction">
@@ -60,10 +128,10 @@
                         <button class='yellow-btn'>Register Now</button>
                     </div>
                     <div class="col-md-5 col-sm-5 col-5">
-                        
+
                     </div>
                 </div>
-                
+
                 <div class="header-image">
                     <img src="./images/header.png" alt="">
                 </div>
@@ -119,7 +187,7 @@
                     <h2>Popular Products</h2>
                     <button class="red-btn">View All Products</button>
                 </div>
-                
+
                 <div class="row products">
                     <div class="col-md-3 col-6 col-sm-6">
                         <div class="product cart">
@@ -133,7 +201,7 @@
                                 <button class="minus">-</button>
                                 <button class='add-cart'>2 in Cart</button>
                                 <button class="plus">+</button>
-                                
+
                             </p>
                         </div>
                     </div>
@@ -318,7 +386,7 @@
                             <div class="col-md-6 col-6 col-sm-7">
                                 <h4>AMISH BAZAR</h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                
+
                             </div>
                             <div class="col-md-2 col-1 col-sm-1"></div>
                             <div class="col-md-4 col-4 col-sm-4">
@@ -335,7 +403,7 @@
                     <div class="col-md-1 col-1 col-sm-1"></div>
                 </div>
                 <div class="row">
-                     <div class="col-md-1 col-1 col-sm-1"></div>
+                    <div class="col-md-1 col-1 col-sm-1"></div>
                     <div class="col-md-1 col-1 col-sm-1">
                         <img src="./images/location-icon.png" alt="">
                     </div>

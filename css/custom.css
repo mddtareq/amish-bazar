@@ -25,6 +25,7 @@
 
 .nav-item a{
     margin-bottom: 10px;
+    cursor: pointer;
 }
 .single-line a{
     margin-right: 20px;
@@ -215,9 +216,39 @@
         height: 80px;
         margin-bottom: 15px;
     }
+    /* .login{
+        margin: auto;
+        width: 80%!important;
+        background-color:#F2F2F2;
+    }
+    .registration{
+        margin: auto!important;
+        width: 100%!important;
+        background-color:#F2F2F2;
+    }
+    .cart-items{
+        margin:auto;
+        width: 90%!important;
+        background-color:#F2F2F2;
+    } */
 }
 
 @media only screen and (min-width: 576px) and (max-width:767px){
+    /* .login{
+        margin: auto;
+        width: 60%!important;
+        background-color:#F2F2F2;
+    }
+    .registration{
+        margin: auto;
+        width: 80%!important;
+        background-color:#F2F2F2;
+    }
+    .cart-items{
+        margin:auto;
+        width: 60%!important;
+        background-color:#F2F2F2;
+    } */
     .cat-info{
         padding:10px;
         background-color:rgba(236, 229, 229, 0.685);
@@ -378,6 +409,8 @@
     padding-top:10px;
 }
 .cart-items{
+    margin:auto;
+    width: 100%;
     background-color:#F2F2F2;
 }
 .single{
@@ -436,6 +469,8 @@
 }
 /* login */
 .login{
+    margin: auto;
+    width: 100%;
     background-color:#F2F2F2;
 }
 .login h3{
@@ -449,6 +484,7 @@
 }
 .reg a{
     color:rgba(0, 0, 0, 0.685);
+    cursor: pointer;
 }
 .reg {
     font-size:12px;
@@ -457,6 +493,8 @@
 
 /* registration */
 .registration{
+    margin: auto;
+    width: 100%;
     background-color:#F2F2F2;
 }
 .registration h3{
