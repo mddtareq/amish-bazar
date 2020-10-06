@@ -36,14 +36,14 @@
                             <a class="nav-link" href="blog.html">Blog</a>
                         </li>
                         <li class="nav-item single-line d-flex">
-                            <a class="nav-link cart-show" href="cart.html">
-                                <button class="yellow-btn">
+                            <a class="nav-link cart-show">
+                                <button data-toggle="modal" data-target="#cart" class="yellow-btn">
                                     <img src="./images/bcart.png" alt="">
                                 </button>
                                 <div class="red-dot"></div>
                             </a>
-                            <a class="nav-link" href="login.html">
-                                <button class="yellow-btn">
+                            <a class="nav-link">
+                                <button data-toggle="modal" data-target="#login" class="yellow-btn">
                                     <img src="./images/people.png" alt="">
                                 </button>
                             </a>
@@ -56,6 +56,200 @@
     </header>
     <br><br>
     <main>
+
+                 <!-- modal login -->
+
+        <!-- Modal -->
+        <div id="login" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+            <div class="login">
+                <h3 class="text-center">WelCome</h3>
+                <br><div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <form action="">
+                                <input class="form-control" type="email" placeholder="Email Address">
+                                <p></p>
+                                <input class="form-control" type="password" placeholder="Password">
+                                <br>
+                                <button type="button" class="yellow-btn">Log In</button>
+                            </form>
+                            <br>
+                            <br>
+                            <p class="reg">New here ? <a data-toggle="modal" data-target="#registration" data-dismiss="modal">Create an account</a></p>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- modal registration -->
+
+        <div class="modal fade" id="registration">
+            <div class="modal-dialog">
+                <div class="modal-content">
+            <div class="registration">
+                <h3 class="text-center">Sign Up for Free</h3>
+                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Non
+                    nulla arcu habitant
+                    sollicitudin.</p>
+                <br>
+                <form action="">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 col-12">
+                                <input class="form-control" type="email" placeholder="Email Address">
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-12">
+                                <input class="form-control" type="email" placeholder="Username">
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-12">
+                                <input class="form-control" type="password" placeholder="Password">
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-12">
+                                <input class="form-control" type="password" placeholder="Confirm Password">
+                            </div>
+                            <div class="col-md-12 text-center">
+                                <button type="button" class="yellow-btn">Register</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            </div>
+            </div>
+        </div>
+        <!-- modal cart -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="cart">
+            <div class="modal-dialog">
+                <div class="modal-content">
+            <div class="cart-items">
+                <h4 class="text-center">My Cart</h4>
+                <hr>
+                <br>
+                <div class="row">
+                    <div class="col-md-1 col-sm-1 col-1"></div>
+                    <div class="col-md-10 col-sm-10 col-10">
+                        <div class="row">
+                            <div class="col-md-8 col-sm-8 col-8">Chicken Meat</div>
+                            <div class="col-md-4 col-sm-4 col-4">৳ 400</div>
+                            <div class="col-md-10 col-sm-8 col-8">
+                                <p></p>
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6 col-6">
+                                        <p class="single d-flex align-items-center justify-content-center">৳
+                                            200</p>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-6 d-flex align-items-center">
+                                        <p class="cartMinus d-flex align-items-center justify-content-center">
+                                            -
+                                        </p>
+                                        <p class="items">2</p>
+                                        <p class="cartPlus d-flex align-items-center justify-content-center">
+                                            +
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-md-8 col-sm-8 col-8">Chicken Meat</div>
+                            <div class="col-md-4 col-sm-4 col-4">৳ 400</div>
+                            <div class="col-md-10 col-sm-8 col-8">
+                                <p></p>
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6 col-6">
+                                        <p class="single d-flex align-items-center justify-content-center">৳
+                                            200</p>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-6 d-flex align-items-center">
+                                        <p class="cartMinus d-flex align-items-center justify-content-center">
+                                            -
+                                        </p>
+                                        <p class="items">2</p>
+                                        <p class="cartPlus d-flex align-items-center justify-content-center">
+                                            +
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-md-8 col-sm-8 col-8">Chicken Meat</div>
+                            <div class="col-md-4 col-sm-4 col-4">৳ 400</div>
+                            <div class="col-md-10 col-sm-8 col-8">
+                                <p></p>
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6 col-6">
+                                        <p class="single d-flex align-items-center justify-content-center">৳
+                                            200</p>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-6 d-flex align-items-center">
+                                        <p class="cartMinus d-flex align-items-center justify-content-center">
+                                            -
+                                        </p>
+                                        <p class="items">2</p>
+                                        <p class="cartPlus d-flex align-items-center justify-content-center">
+                                            +
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-md-8 col-sm-8 col-8">Chicken Meat</div>
+                            <div class="col-md-4 col-sm-4 col-4">৳ 400</div>
+                            <div class="col-md-10 col-sm-8 col-8">
+                                <p></p>
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6 col-6">
+                                        <p class="single d-flex align-items-center justify-content-center">৳
+                                            200</p>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-6 d-flex align-items-center">
+                                        <p class="cartMinus d-flex align-items-center justify-content-center">
+                                            -
+                                        </p>
+                                        <p class="items">2</p>
+                                        <p class="cartPlus d-flex align-items-center justify-content-center">
+                                            +
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-1"></div>
+
+                    <div class="col-md-12">
+                        <hr>
+                    </div>
+                    <div class="col-md-1 col-sm- col-1"></div>
+                    <div class="col-md-10 col-sm-10 col-10">
+                        <div class="d-flex justify-content-between">
+                            <p>Gross Total</p>
+                            <p>৳ 1200</p>
+                        </div>
+                        <div class="text-center">
+                            <button class="yellow-btn">Checkout</button>
+                        </div>
+                        <br>
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+            </div>
+            </div>
+            </div>
+        </div>
+
         <!-- single blog -->
         <section>
             <div class="container">
@@ -64,52 +258,52 @@
                         <div class="col-md-6">
                             <img src="./images/blog4.jpeg" alt="">
                             <div class="row small-pic">
-                                <div class="col-md-1 col-1 col-sm-1 d-flex align-items-center"><
-                                </div>
-                                <div class="col-md-3 col-3 col-sm-3">
-                                    <img src="./images/blog4_1.png" alt="">
-                                </div>
-                                <div class="col-md-3 col-3 col-sm-3">
-                                    <img src="./images/blog4_2.png" alt="">
-                                </div>
-                                <div class="col-md-3 col-3 col-sm-3">
-                                    <img src="./images/blog4_1.png" alt="">
-                                </div>
-                                <div class="col-md-1 col-1 col-sm-1 d-flex align-items-center">></div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <h6>Chicken Meat</h6>
-                            <small>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non nulla arcu habitant.
-                            </small>
-                            <p></p>
-                            <div class="row">
-                                <div class="col-md-6 col-sm-6 col-6">
-                                    <p class="single d-flex align-items-center justify-content-center">৳
-                                        200/kg</p>
-                                </div>
-                                <div class="col-md-6 col-sm-6 col-6 d-flex align-items-center">
-                                    <p class="cartMinus d-flex align-items-center justify-content-center">-
-                                    </p>
-                                    <p class="items">1</p>
-                                    <p class="cartPlus d-flex align-items-center justify-content-center">+
-                                    </p>
+                                <div class="col-md-1 col-1 col-sm-1 d-flex align-items-center">
+                                    < </div>
+                                        <div class="col-md-3 col-3 col-sm-3">
+                                            <img src="./images/blog4_1.png" alt="">
+                                        </div>
+                                        <div class="col-md-3 col-3 col-sm-3">
+                                            <img src="./images/blog4_2.png" alt="">
+                                        </div>
+                                        <div class="col-md-3 col-3 col-sm-3">
+                                            <img src="./images/blog4_1.png" alt="">
+                                        </div>
+                                        <div class="col-md-1 col-1 col-sm-1 d-flex align-items-center">></div>
                                 </div>
                             </div>
-                            <hr>
-                            <p>- Lorem ipsum dolor sit amet <br>
-                                - Consectetur adipiscing elit <br>
-                                - Non nulla arcu habitant.</p>
-                            <button class="yellow-btn">Add to Cart</button>
+                            <div class="col-md-6">
+                                <h6>Chicken Meat</h6>
+                                <small>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non nulla arcu habitant.
+                                </small>
+                                <p></p>
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6 col-6">
+                                        <p class="single d-flex align-items-center justify-content-center">৳
+                                            200/kg</p>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-6 d-flex align-items-center">
+                                        <p class="cartMinus d-flex align-items-center justify-content-center">-
+                                        </p>
+                                        <p class="items">1</p>
+                                        <p class="cartPlus d-flex align-items-center justify-content-center">+
+                                        </p>
+                                    </div>
+                                </div>
+                                <hr>
+                                <p>- Lorem ipsum dolor sit amet <br>
+                                    - Consectetur adipiscing elit <br>
+                                    - Non nulla arcu habitant.</p>
+                                <button class="yellow-btn">Add to Cart</button>
+                            </div>
                         </div>
+
+
                     </div>
-
-
+                    <br><br>
+                    <hr>
                 </div>
-                <br><br>
-                <hr>
-            </div>
         </section>
         <!--  -->
         <section>
@@ -150,11 +344,11 @@
                             curabitur laoreet elit malesuada viverra neque. Vel felis tortor velit quisque dolor enim at
                             varius leo. In ultrices ac eu nec lacus eget nulla vestibulum, augue. Enim mauris, lorem
                             bibendum condimentum porta aenean at. Blandit nisi.</p>
-                            <div class="small-pic">
-                                <img src="./images/blog4_1.png" alt="">
-                                <img src="./images/blog4_2.png" alt="">
-                                <img src="./images/blog4_1.png" alt="">
-                            </div>
+                        <div class="small-pic">
+                            <img src="./images/blog4_1.png" alt="">
+                            <img src="./images/blog4_2.png" alt="">
+                            <img src="./images/blog4_1.png" alt="">
+                        </div>
                     </div>
                     <br>
                     <div class="review">
