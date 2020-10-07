@@ -1,6 +1,10 @@
 /* div{
     border-top: 1px solid red;
 } */
+
+body{
+    overflow: scroll;
+}
 /* header */
 
 /* navbar */
@@ -264,12 +268,13 @@
 }
 
 .products{
-    background-image: url(../images/Group35.png);
+    background-image: url(../images/Group35.png),url(../images/Group87.png);
     background-repeat: no-repeat;
-    background-position: right top;
+    background-position: right top,left 80%;
 }
 
 .products .product{
+    background-color:rgb(255, 255, 255);
     margin-top: 40px;
     box-shadow: 0px 15px 45px rgba(171, 171, 171, 0.25);
     border-radius: 5px;
@@ -296,11 +301,22 @@
 .products button{
     width: 100%;
 }
+.products a{
+    color:black;
+    text-decoration: none;
+}
 
 /* blog-info */
 
+.blog{
+    background-image: url(../images/Group87.png),url(../images/Group36.png);
+    background-repeat: no-repeat;
+    background-position: right 80%,left 60%;
+}
+
 .blog-info{
     margin-top: 40px;
+    background-color: white;
     box-shadow: 0px 15px 45px rgba(171, 171, 171, 0.25);
     border-radius: 5px;
 }
@@ -335,6 +351,9 @@
 
 .footer{
     background-color:#FFF9EA;
+    background-image:url(../images/Group87.png),url(../images/Group36.png);
+    background-position:left 20%, right 80%;
+    background-repeat: no-repeat, no-repeat;
 }
 
 .link a{
@@ -358,6 +377,7 @@
     top:30%;
     right:0;
     position: fixed;
+    z-index: 1;
 }
 
 
@@ -368,6 +388,10 @@
     margin-top: 15px;
     color: rgba(0, 0, 0, 0.671);
     margin-left: 20%;
+    overflow: hidden;
+}
+.sideMenu{
+    background-color: rgb(255, 255, 255);;
 }
 .sideMenu .menu{
     height: 50px;
@@ -452,6 +476,11 @@
     color: black;
     text-decoration: none;
 }
+.social-blog img{
+    margin-top:5px;
+    width:25px!important;
+    margin-right: 5px;
+}
 
 /* single-blog */
 .single-blog img{
@@ -532,3 +561,21 @@
 .cart-items{
     border-radius: 5px;
 }
+#off{
+    position:absolute;
+    display: none;
+    z-index: 1;
+}
+#off-btn{
+    border: none;
+}
+#off-btn img{
+    cursor: pointer;
+    margin-right: 10px;
+    outline:none;
+    border: none;
+    width:12px;
+    height:12px;
+}
+
+
