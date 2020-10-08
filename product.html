@@ -17,6 +17,7 @@
 
         <div class="container">
             <nav class="navbar navbar-expand-md navbar-light">
+                <a id="off-btn"><img src="./icons/menu.png" alt=""></a>
                 <a class="navbar-brand" href="index.html"><img src="./images/logo.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -251,51 +252,51 @@
 
             <div class="container-lg">
                 <div class="row">
-                    <div id="small-hide" class="col-md-3 col-sm-3 col-5">
-                        <div class="sideMenu">
+                    <div id="off" class="col-md-4 col-lg-4 col-sm-6 col-10">
+                        <div id="sideMenu" class="sideMenu">
                             <br><br>
-                            <div class="menu d-flex align-items-center">
+                            <div id='menu1' class="menu d-flex align-items-center">
                                 <p></p>
                                 <img src="./icons/coronavirus.png" alt="">
                                 <p>COVID-19 Protections</p>
                             </div>
-                            <div class="menu d-flex align-items-center">
+                            <div id='menu2' class="menu d-flex align-items-center">
                                 <p></p>
                                 <img src="./icons/new.png" alt="">
                                 <p>New Arrivals</p>
                             </div>
-                            <div class="menu d-flex align-items-center">
+                            <div id='menu3' class="menu d-flex align-items-center">
                                 <p></p>
                                 <img src="./icons/sale.png" alt="">
                                 <p>Flash Sales</p>
                             </div>
-                            <div class="menu d-flex align-items-center">
+                            <div id='menu4' class="menu d-flex align-items-center">
                                 <p></p>
                                 <img src="./icons/fire.png" alt="">
                                 <p>Popular</p>
                             </div>
-                            <div class="menu d-flex align-items-center">
+                            <div id='menu5' class="menu d-flex align-items-center">
                                 <p></p>
                                 <img src="./icons/chicken.png" alt="">
                                 <p>Chicken</p>
                             </div>
-                            <div class="menu d-flex align-items-center">
+                            <div id='menu6' class="menu d-flex align-items-center">
                                 <p></p>
                                 <img src="./icons/cow.png" alt="">
                                 <p>Cow</p>
                             </div>
-                            <div class="menu d-flex align-items-center">
+                            <div id='menu7' class="menu d-flex align-items-center">
                                 <p></p>
                                 <img src="./images/sheep.png" alt="">
                                 <p>Lamb</p>
                             </div>
-                            <div class="menu d-flex align-items-center">
+                            <div id='menu8' class="menu d-flex align-items-center">
                                 <p></p>
                                 <img src="./images/fish.png" alt="">
                                 <p>Fish</p>
                             </div>
                             <br>
-                            <div class="range">
+                            <div id="range" class="range">
                                 <p></p>
                                 <h6>Price Range</h6>
                                 <input type="range" min="200" max="1000">
@@ -304,14 +305,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-8 col-sm-8 col-7">
+                    <div class="col-md-12 col-sm-12 col-12">
                         <div class="category">
                             <div class="row products">
-                                <div class="col-md-4 col-lg-4 col-12 col-sm-6">
+                                <div class="col-md-3 col-lg-3 col-12 col-sm-6">
                                     <div class="product cart">
                                         <img src="./images/amish1.png" alt="">
                                         <div class="product-info text-center">
-                                            <h6>Beef Raw Meat</h6>
+                                            <h6><a href="singleProduct.html">Beef Raw Meat</a></h6>
                                             <small>500 gm</small>
                                             <br>
                                             <strong>৳ 350</strong>
@@ -323,11 +324,11 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-4 col-lg-4 col-12 col-sm-6">
+                                <div class="col-md-3 col-lg-3 col-12 col-sm-6">
                                     <div class="product">
                                         <img src="./images/amish2.png" alt="">
                                         <div class="product-info text-center">
-                                            <h6>Loitta Fish</h6>
+                                            <h6><a href="singleProduct.html">Loitta Fish</a></h6>
                                             <small>250 gm</small>
                                             <br>
                                             <strong>৳ 450</strong>
@@ -335,11 +336,11 @@
                                         <button class="yellow-btn">Add to cart</button>
                                     </div>
                                 </div>
-                                <div class="col-md-4 col-lg-4 col-12 col-sm-6">
+                                <div class="col-md-3 col-lg-3 col-12 col-sm-6">
                                     <div class="product">
                                         <img src="./images/amish3.png" alt="">
                                         <div class="product-info text-center">
-                                            <h6>Chicken Raw Meat</h6>
+                                            <h6><a href="singleProduct.html">Chicken Raw Meat</a></h6>
                                             <small>250 gm</small>
                                             <br>
                                             <strong>৳ 350</strong>
@@ -347,11 +348,11 @@
                                         <button class="yellow-btn">Add to cart</button>
                                     </div>
                                 </div>
-                                <div class="col-md-4 col-lg-4 col-12 col-sm-6">
+                                <div class="col-md-3 col-lg-3 col-12 col-sm-6">
                                     <div class="product">
                                         <img src="./images/amish4.png" alt="">
                                         <div class="product-info text-center">
-                                            <h6>Lamb Raw Meat</h6>
+                                            <h6><a href="singleProduct.html">Lamb Raw Meat</a></h6>
                                             <small>500 gm</small>
                                             <br>
                                             <strong>৳ 750</strong>
@@ -359,11 +360,11 @@
                                         <button class="yellow-btn">Add to cart</button>
                                     </div>
                                 </div>
-                                <div class="col-md-4 col-lg-4 col-12 col-sm-6">
+                                <div class="col-md-3 col-lg-3 col-12 col-sm-6">
                                     <div class="product">
                                         <img src="./images/amish5.png" alt="">
                                         <div class="product-info text-center">
-                                            <h6>Lamb Raw Meat</h6>
+                                            <h6><a href="singleProduct.html">Lamb Raw Meat</a></h6>
                                             <small>500 gm</small>
                                             <br>
                                             <strong>৳ 850</strong>
@@ -371,11 +372,11 @@
                                         <button class="yellow-btn">Add to cart</button>
                                     </div>
                                 </div>
-                                <div class="col-md-4 col-lg-4 col-12 col-sm-6">
+                                <div class="col-md-3 col-lg-3 col-12 col-sm-6">
                                     <div class="product">
                                         <img src="./images/amish6.png" alt="">
                                         <div class="product-info text-center">
-                                            <h6>Lamb Raw Meat</h6>
+                                            <h6><a href="singleProduct.html">Lamb Raw Meat</a></h6>
                                             <small>500 gm</small>
                                             <br>
                                             <strong>৳ 550</strong>
@@ -383,11 +384,11 @@
                                         <button class="yellow-btn">Add to cart</button>
                                     </div>
                                 </div>
-                                <div class="col-md-4 col-lg-4 col-12 col-sm-6">
+                                <div class="col-md-3 col-lg-3 col-12 col-sm-6">
                                     <div class="product">
                                         <img src="./images/amish7.png" alt="">
                                         <div class="product-info text-center">
-                                            <h6>Lamb Raw Meat</h6>
+                                            <h6><a href="singleProduct.html">Lamb Raw Meat</a></h6>
                                             <small>500 gm</small>
                                             <br>
                                             <strong>৳ 250</strong>
@@ -395,11 +396,11 @@
                                         <button class="yellow-btn">Add to cart</button>
                                     </div>
                                 </div>
-                                <div class="col-md-4 col-lg-4 col-12 col-sm-6">
+                                <div class="col-md-3 col-lg-3 col-12 col-sm-6">
                                     <div class="product">
                                         <img src="./images/amish8.png" alt="">
                                         <div class="product-info text-center">
-                                            <h6>Lamb Raw Meat</h6>
+                                            <h6><a href="singleProduct.html">Lamb Raw Meat</a></h6>
                                             <small>500 gm</small>
                                             <br>
                                             <strong>৳ 750</strong>
@@ -407,11 +408,11 @@
                                         <button class="yellow-btn">Add to cart</button>
                                     </div>
                                 </div>
-                                <div class="col-md-4 col-lg-4 col-12 col-sm-6">
+                                <div class="col-md-3 col-lg-3 col-12 col-sm-6">
                                     <div class="product">
                                         <img src="./images/amish1.png" alt="">
                                         <div class="product-info text-center">
-                                            <h6>Lamb Raw Meat</h6>
+                                            <h6><a href="singleProduct.html">Lamb Raw Meat</a></h6>
                                             <small>500 gm</small>
                                             <br>
                                             <strong>৳ 350</strong>
@@ -420,14 +421,17 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="pagination-custom text-center">
+                                <img src="./images/pagination.png" alt="">
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-1 col-sm-1 col-1">
                     </div>
-                </div> 
+                </div>
             </div> 
     </main>
-    <br><br><br><br>
+    <br><br><br>
     <footer>
         <div class="footer">
             <br><br><br>
@@ -463,6 +467,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/product-menu.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
