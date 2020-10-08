@@ -1,10 +1,6 @@
 /* div{
     border-top: 1px solid red;
 } */
-
-body{
-    overflow: scroll;
-}
 /* header */
 
 /* navbar */
@@ -220,6 +216,18 @@ body{
         height: 80px;
         margin-bottom: 15px;
     }
+    #login .modal-dialog{
+        width: 95%!important;
+        margin-top:70px;
+    }
+    #registration .modal-dialog{
+        margin-top:70px;
+        width: 95%!important;
+    }
+    #cart .modal-dialog{
+        margin-top:70px;
+        width: 95%!important;
+    }
     
 }
 
@@ -380,9 +388,6 @@ body{
     z-index: 1;
 }
 
-
-
-
 /* products */
 .menu p{
     margin-top: 15px;
@@ -431,6 +436,7 @@ body{
     padding-top:10px;
 }
 .cart-items{
+    border-radius: 5px;
     margin:auto;
     width: 100%;
     background-color:#F2F2F2;
@@ -505,6 +511,7 @@ body{
 }
 /* login */
 .login{
+    border-radius: 5px;
     margin: auto;
     width: 100%;
     background-color:#F2F2F2;
@@ -529,6 +536,7 @@ body{
 
 /* registration */
 .registration{
+    border-radius: 5px;
     margin: auto;
     width: 100%;
     background-color:#F2F2F2;
@@ -552,15 +560,21 @@ body{
 }
 
 /* modal */
-.login{
-    border-radius: 5px;
+
+#login .modal-dialog{
+    width: 40%;
+    margin-top:70px;
 }
-.registration{
-    border-radius:5px;
+#registration .modal-dialog{
+    margin-top:70px;
+    width: 100%;
 }
-.cart-items{
-    border-radius: 5px;
+#cart .modal-dialog{
+    margin-top:70px;
+    width: 50%;
 }
+
+/* product menu */
 #off{
     position:absolute;
     display: none;
@@ -579,3 +593,9 @@ body{
 }
 
 
+/* pagination */
+.pagination-custom img{
+    margin-top: 15px;
+    width: 80%;
+
+}
