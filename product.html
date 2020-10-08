@@ -17,7 +17,7 @@
 
         <div class="container">
             <nav class="navbar navbar-expand-md navbar-light">
-                <a id="off-btn"><img src="./icons/menu.png" alt=""></a>
+                <a id="off-btn" onclick="openNav()"><img src="./icons/menu.png" alt=""></a>
                 <a class="navbar-brand" href="index.html"><img src="./images/logo.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -252,48 +252,50 @@
 
             <div class="container-lg">
                 <div class="row">
-                    <div id="off" class="col-md-4 col-lg-4 col-sm-6 col-10">
-                        <div id="sideMenu" class="sideMenu">
-                            <br><br>
-                            <div id='menu1' class="menu d-flex align-items-center">
-                                <p></p>
-                                <img src="./icons/coronavirus.png" alt="">
-                                <p>COVID-19 Protections</p>
-                            </div>
-                            <div id='menu2' class="menu d-flex align-items-center">
-                                <p></p>
-                                <img src="./icons/new.png" alt="">
-                                <p>New Arrivals</p>
-                            </div>
-                            <div id='menu3' class="menu d-flex align-items-center">
-                                <p></p>
-                                <img src="./icons/sale.png" alt="">
-                                <p>Flash Sales</p>
-                            </div>
-                            <div id='menu4' class="menu d-flex align-items-center">
-                                <p></p>
-                                <img src="./icons/fire.png" alt="">
-                                <p>Popular</p>
-                            </div>
-                            <div id='menu5' class="menu d-flex align-items-center">
-                                <p></p>
-                                <img src="./icons/chicken.png" alt="">
-                                <p>Chicken</p>
-                            </div>
-                            <div id='menu6' class="menu d-flex align-items-center">
-                                <p></p>
-                                <img src="./icons/cow.png" alt="">
-                                <p>Cow</p>
-                            </div>
-                            <div id='menu7' class="menu d-flex align-items-center">
-                                <p></p>
-                                <img src="./images/sheep.png" alt="">
-                                <p>Lamb</p>
-                            </div>
-                            <div id='menu8' class="menu d-flex align-items-center">
-                                <p></p>
-                                <img src="./images/fish.png" alt="">
-                                <p>Fish</p>
+                    <div id="mySidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <br>
+                            <div class="custom">
+                                <a href="" class="menu d-flex align-items-center">
+                                    <p></p>
+                                    <img src="./icons/coronavirus.png" alt="">
+                                    <p>COVID-19 Protections</p>
+                                </a>
+                                <a class="menu d-flex align-items-center">
+                                    <p></p>
+                                    <img src="./icons/new.png" alt="">
+                                    <p>New Arrivals</p>
+                                </a>
+                                <a class="menu d-flex align-items-center">
+                                    <p></p>
+                                    <img src="./icons/sale.png" alt="">
+                                    <p>Flash Sales</p>
+                                </a>
+                                <a id='menu4' class="menu d-flex align-items-center">
+                                    <p></p>
+                                    <img src="./icons/fire.png" alt="">
+                                    <p>Popular</p>
+                                </a>
+                                <a id='menu5' class="menu d-flex align-items-center">
+                                    <p></p>
+                                    <img src="./icons/chicken.png" alt="">
+                                    <p>Chicken</p>
+                                </a>
+                                <a id='menu6' class="menu d-flex align-items-center">
+                                    <p></p>
+                                    <img src="./icons/cow.png" alt="">
+                                    <p>Cow</p>
+                                </a>
+                                <a id='menu7' class="menu d-flex align-items-center">
+                                    <p></p>
+                                    <img src="./images/sheep.png" alt="">
+                                    <p>Lamb</p>
+                                </a>
+                                <a id='menu8' class="menu d-flex align-items-center">
+                                    <p></p>
+                                    <img src="./images/fish.png" alt="">
+                                    <p>Fish</p>
+                                </a>
                             </div>
                             <br>
                             <div id="range" class="range">
@@ -303,8 +305,7 @@
                                 <br>
                                 <small>৳ 200 - 1000</small>
                             </div>
-                        </div>
-                    </div>
+                      </div>
                     <div class="col-md-12 col-sm-12 col-12">
                         <div class="category">
                             <div class="row products">
@@ -422,7 +423,13 @@
                                 </div>
                             </div>
                             <div class="pagination-custom text-center">
-                                <img src="./images/pagination.png" alt="">
+                                <a href="">1</a>
+                                <a class="red" href="">2</a>
+                                <a href="">3</a>
+                                <a href="">...</a>
+                                <a href="">20</a>
+                                <a href="">21</a>
+                                <a href="">22</a>
                             </div>
                         </div>
                     </div>
