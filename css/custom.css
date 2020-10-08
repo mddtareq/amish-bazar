@@ -196,10 +196,9 @@
     .range{
         box-shadow: 0px 15px 45px rgba(171, 171, 171, 0.25);
         width: 100%;
-        height: 100px;
         border: 1px solid rgb(219, 214, 214);
-        border-top-right-radius: 100%;
-        border-bottom-right-radius: 100%;
+        border-top-right-radius: 10%;
+        border-bottom-right-radius: 0%;
     }
     .range h6,.range small{
         font-size: 12px;
@@ -504,9 +503,10 @@
 
 .small-pic{
     margin-top:20px;
+    margin-bottom: 20px;
 }
 .small-pic img{
-    width: 80px;
+    width: 80px!important;
     height: 80px;
 }
 /* login */
@@ -575,11 +575,7 @@
 }
 
 /* product menu */
-#off{
-    position:absolute;
-    display: none;
-    z-index: 1;
-}
+
 #off-btn{
     border: none;
 }
@@ -593,9 +589,103 @@
 }
 
 
-/* pagination */
-.pagination-custom img{
-    margin-top: 15px;
-    width: 80%;
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  .custom a{
+    width: 95%;
+      box-shadow: 0px 15px 45px rgba(171, 171, 171, 0.25);
+    }
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  .sidenav .range{
+      width: 95%;
+  }
+  
+  .sidenav img{
+      width:15px;
+      height: 15px;
+  }
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
 
+
+/* pagination */
+.pagination-custom a{
+    margin-top: 30px;
+    display: inline-block;
+  color: black;
+  text-decoration: none;
+  margin-right: 6px;
+  border-radius:100%;
+  font-weight:bold;
+background-color:rgba(128, 128, 128, 0.527);
+  width: 25px;
+height: 25px;
+}
+.pagination-custom .red{
+    background-color:#FC6E51;
+}
+
+
+/* owl carousel */
+.item{
+    margin-top:20px;
+}
+.item img{
+    width:80%!important;
+    margin: auto;
+    height: 100px;
+}
+
+.owl-prev {
+    font-size: 50px !important;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    top: 25px;
+    outline: none !important;
+}
+
+.owl-next {
+    font-size: 50px !important;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 0;
+    top: 25px;
+}
+
+.owl-nav button:focus {
+    outline: none;
 }
