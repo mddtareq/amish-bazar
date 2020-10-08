@@ -675,9 +675,11 @@ height: 25px;
     left: 0;
     top: 25px;
     outline: none !important;
+    margin-left: -10px!important;
 }
 
 .owl-next {
+    margin-right: -10px!important;
     font-size: 50px !important;
     width: 20px;
     height: 20px;
