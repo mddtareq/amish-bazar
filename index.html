@@ -4,79 +4,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./images/favicon.png">
+    <link rel="icon" href="./images/icons/favicon.png">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/custom.css">
     <title>AMISH BAZAR</title>
 </head>
 
 <body>
+
     <header>
-
-
 
         <!-- navbar -->
 
-        <div class="container">
-            <nav class="navbar navbar-expand-md navbar-light">
-                <a class="navbar-brand" href="index.html"><img src="./images/logo.png" alt=""></a>
+        <div class="fixed-top">
+            <nav class="navbar navbar-expand-md navbar-light bg-white">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html"><img src="./images/logos/logo.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
                             <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="product.html">Product</a>
+                            <a class="nav-link" href="shop.html">Shop</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="blog.html">Blog</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item custom-nav">
                             <a class="nav-link">
                                 <button data-toggle="modal" data-target="#login" class="yellow-btn">Log In</button>
                             </a>
                         </li>
                     </ul>
-
+                </div>
                 </div>
             </nav>
         </div>
-    </header>
-    <main>
 
+    </header>
+
+
+    <main>
         <!-- modal login -->
 
-        <!-- Modal -->
         <div id="login" class="login-modal modal fade" role="dialog">
             <div class="modal-dialog">
                 <div class="modal-content">
-            <div class="login">
-                <h3 class="text-center">WelCome</h3>
-                <br><div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-12 text-center">
-                            <form action="">
-                                <input class="form-control" type="email" placeholder="Email Address">
-                                <p></p>
-                                <input class="form-control" type="password" placeholder="Password">
-                                <br>
-                                <button type="button" class="yellow-btn">Log In</button>
-                            </form>
-                            <br>
-                            <br>
-                            <p class="reg">New here ? <a data-toggle="modal" data-target="#registration" data-dismiss="modal">Create an account</a></p>
+                    <div class="login">
+                        <h3 class="text-center">WelCome</h3>
+                        <br>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-12 text-center">
+                                    <form action="">
+                                        <input class="form-control" type="email" placeholder="Email Address">
+                                        <p></p>
+                                        <input class="form-control" type="password" placeholder="Password">
+                                        <br>
+                                        <button type="button" class="yellow-btn">Log In</button>
+                                    </form>
+                                    <br>
+                                    <br>
+                                    <p class="reg">New here ? <a data-toggle="modal" data-target="#registration"
+                                            data-dismiss="modal">Create an account</a></p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    </div>
+                </div>
             </div>
-        </div>
-    </div>
         </div>
 
         <!-- modal registration -->
@@ -84,36 +86,36 @@
         <div class="modal fade" id="registration">
             <div class="modal-dialog">
                 <div class="modal-content">
-            <div class="registration">
-                <h3 class="text-center">Sign Up for Free</h3>
-                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Non
-                    nulla arcu habitant
-                    sollicitudin.</p>
-                <br>
-                <form action="">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-6 col-sm-6 col-12">
-                                <input class="form-control" type="email" placeholder="Email Address">
+                    <div class="registration">
+                        <h3 class="text-center">Sign Up for Free</h3>
+                        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Non
+                            nulla arcu habitant
+                            sollicitudin.</p>
+                        <br>
+                        <form action="">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6 col-12">
+                                        <input class="form-control" type="email" placeholder="Email Address">
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-12">
+                                        <input class="form-control" type="email" placeholder="Username">
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-12">
+                                        <input class="form-control" type="password" placeholder="Password">
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-12">
+                                        <input class="form-control" type="password" placeholder="Confirm Password">
+                                    </div>
+                                    <div class="col-md-12 text-center">
+                                        <button type="button" class="yellow-btn">Register</button>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-md-6 col-sm-6 col-12">
-                                <input class="form-control" type="email" placeholder="Username">
-                            </div>
-                            <div class="col-md-6 col-sm-6 col-12">
-                                <input class="form-control" type="password" placeholder="Password">
-                            </div>
-                            <div class="col-md-6 col-sm-6 col-12">
-                                <input class="form-control" type="password" placeholder="Confirm Password">
-                            </div>
-                            <div class="col-md-12 text-center">
-                                <button type="button" class="yellow-btn">Register</button>
-                            </div>
-                        </div>
+                        </form>
                     </div>
-                </form>
+                </div>
             </div>
-        </div>
-    </div>
         </div>
 
         <!-- introduction -->
@@ -131,46 +133,47 @@
             </div>
             <br>
         </section>
+
         <br><br><br>
 
-
         <!-- fixed icon -->
+
         <div class="fix">
-            <img src="./images/fix.png" alt="">
+            <img src="./images/icons/fix.png" alt="">
         </div>
 
         <!-- category -->
 
         <section>
             <div class="red-sh category text-center">
-                <h1>Shop by Category</h1>
+                <h2>Shop by Category</h2>
                 <p></p>
                 <button class="red-btn">View All Products</button>
                 <br><br><br>
                 <div class="container">
-                    <div class="text-center d-flex">
+                    <div class="all-category d-flex justify-content-center">
                         <div class="cat-info">
-                            <img src="./images/chicken.png" alt="">
+                            <img src="./images/category-icons/chicken.png" alt="">
                             <br>
                             <small>Chicken</small>
                         </div>
                         <div class="cat-info">
-                            <img src="./images/cow.png" alt="">
+                            <img src="./images/category-icons/cow.png" alt="">
                             <br>
                             <small>Cow</small>
                         </div>
                         <div class="cat-info">
-                            <img src="./images/sheep.png" alt="">
+                            <img src="./images/category-icons/sheep.png" alt="">
                             <br>
                             <small>Lamb</small>
                         </div>
                         <div class="cat-info">
-                            <img src="./images/fish.png" alt="">
+                            <img src="./images/category-icons/fish.png" alt="">
                             <br>
                             <small>Fish</small>
                         </div>
                         <div class="cat-info">
-                            <img src="./images/horse.png" alt="">
+                            <img src="./images/category-icons/horse.png" alt="">
                             <br>
                             <small>Horse</small>
                         </div>
@@ -178,22 +181,24 @@
                 </div>
             </div>
         </section>
+
         <br><br>
+
         <!-- popular products -->
-        
 
         <section>
             <div class="category container">
                 <div class="red-sh text-center">
-                    <h1>Popular Products</h1>
+                    <h2>Popular Products</h2>
                     <p></p>
                     <button class="red-btn">View All Products</button>
                 </div>
+                <br>
                 <div class="row products">
                     <div class="col-md-4 col-lg-3 col-6 col-sm-6">
-                        
+
                         <div class="product cart">
-                            <img src="./images/amish1.png" alt="">
+                            <img src="./images/shop-items/amish1.png" alt="">
                             <div class="product-info text-center">
                                 <h6>Beef Raw Meat</h6>
                                 <small>500 gm</small>
@@ -201,15 +206,17 @@
                                 <strong>৳ 350</strong>
                             </div>
                             <div class="plus-minus d-flex ">
-                                <button><strong class="d-flex align-items-center justify-content-center">-</strong></button>
+                                <button><strong
+                                        class="d-flex align-items-center justify-content-center">-</strong></button>
                                 <p class="d-flex align-items-center justify-content-center">Add to Cart</p>
-                                <button><strong class="d-flex align-items-center justify-content-center">+</strong></button>
+                                <button><strong
+                                        class="d-flex align-items-center justify-content-center">+</strong></button>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 col-lg-3 col-6 col-sm-6">
                         <div class="product">
-                            <img src="./images/amish2.png" alt="">
+                            <img src="./images/shop-items/amish2.png" alt="">
                             <div class="product-info text-center">
                                 <h6>Loitta Fish</h6>
                                 <small>250 gm</small>
@@ -221,7 +228,7 @@
                     </div>
                     <div class="col-md-4 col-lg-3 col-6 col-sm-6">
                         <div class="product">
-                            <img src="./images/amish3.png" alt="">
+                            <img src="./images/shop-items/amish3.png" alt="">
                             <div class="product-info text-center">
                                 <h6>Chicken Raw Meat</h6>
                                 <small>250 gm</small>
@@ -233,7 +240,7 @@
                     </div>
                     <div class="col-md-4 col-lg-3 col-6 col-sm-6">
                         <div class="product">
-                            <img src="./images/amish4.png" alt="">
+                            <img src="./images/shop-items/amish4.png" alt="">
                             <div class="product-info text-center">
                                 <h6>Lamb Raw Meat</h6>
                                 <small>500 gm</small>
@@ -245,7 +252,7 @@
                     </div>
                     <div class="col-md-4 col-lg-3 col-6 col-sm-6">
                         <div class="product">
-                            <img src="./images/amish5.png" alt="">
+                            <img src="./images/shop-items/amish5.png" alt="">
                             <div class="product-info text-center">
                                 <h6>Lamb Raw Meat</h6>
                                 <small>500 gm</small>
@@ -257,7 +264,7 @@
                     </div>
                     <div class="col-md-4 col-lg-3 col-6 col-sm-6">
                         <div class="product">
-                            <img src="./images/amish6.png" alt="">
+                            <img src="./images/shop-items/amish6.png" alt="">
                             <div class="product-info text-center">
                                 <h6>Lamb Raw Meat</h6>
                                 <small>500 gm</small>
@@ -269,7 +276,7 @@
                     </div>
                     <div class="col-md-4 col-lg-3 col-6 col-sm-6">
                         <div class="product">
-                            <img src="./images/amish7.png" alt="">
+                            <img src="./images/shop-items/amish7.png" alt="">
                             <div class="product-info text-center">
                                 <h6>Lamb Raw Meat</h6>
                                 <small>500 gm</small>
@@ -281,7 +288,7 @@
                     </div>
                     <div class="col-md-4 col-lg-3 col-6 col-sm-6">
                         <div class="product">
-                            <img src="./images/amish8.png" alt="">
+                            <img src="./images/shop-items/amish8.png" alt="">
                             <div class="product-info text-center">
                                 <h6>Lamb Raw Meat</h6>
                                 <small>500 gm</small>
@@ -293,7 +300,7 @@
                     </div>
                     <div class="col-md-4 col-lg-3 col-6 col-sm-6">
                         <div class="product">
-                            <img src="./images/amish1.png" alt="">
+                            <img src="./images/shop-items/amish1.png" alt="">
                             <div class="product-info text-center">
                                 <h6>Lamb Raw Meat</h6>
                                 <small>500 gm</small>
@@ -306,94 +313,96 @@
                 </div>
             </div>
         </section>
+
         <br><br>
 
         <!-- blogs -->
 
         <section class="blog">
             <div class="red-sh text-center">
-                <h1>Our Blogs</h1>
+                <h2>Our Blogs</h2>
                 <p>see our blog story to decide yourself</p>
                 <button class="red-btn">View All</button>
             </div>
+            <br>
             <div class="container">
-                <div >
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-4 col-6 col-sm-6">
-                                <div class="blog-info">
-                                    <img src="./images/blog1.jpeg" alt="">
-                                    <div class="blog-details">
-                                        <h6>Chicken is important</h6>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, maiores.
-                                        </p>
-                                        <small>23 January, 2020</small>
-                                    </div>
+                <div class="m-auto blog-width">
+                    <div class="row">
+                        <div class="col-md-4 col-6 col-sm-6">
+                            <div class="blog-info">
+                                <img src="./images/blogs/blog1.jpeg" alt="">
+                                <div class="blog-details">
+                                    <h6>Chicken is important</h6>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, maiores.
+                                    </p>
+                                    <small>23 January, 2020</small>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-6 col-sm-6">
-                                <div class="blog-info">
-                                    <img src="./images/blog2.jpeg" alt="">
-                                    <div class="blog-details">
-                                        <h6>Dul risus</h6>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, maiores.
-                                        </p>
-                                        <small>23 January, 2020</small>
-                                    </div>
+                        </div>
+                        <div class="col-md-4 col-6 col-sm-6">
+                            <div class="blog-info">
+                                <img src="./images/blogs/blog2.jpeg" alt="">
+                                <div class="blog-details">
+                                    <h6>Dul risus</h6>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, maiores.
+                                    </p>
+                                    <small>23 January, 2020</small>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-6 col-sm-6">
-                                <div class="blog-info">
-                                    <img src="./images/blog3.jpeg" alt="">
-                                    <div class="blog-details">
-                                        <h6>Elementum cras</h6>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, maiores.
-                                        </p>
-                                        <small>23 January, 2020</small>
-                                    </div>
+                        </div>
+                        <div class="col-md-4 col-6 col-sm-6">
+                            <div class="blog-info">
+                                <img src="./images/blogs/blog3.jpeg" alt="">
+                                <div class="blog-details">
+                                    <h6>Elementum cras</h6>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, maiores.
+                                    </p>
+                                    <small>23 January, 2020</small>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-6 col-sm-6">
-                                <div class="blog-info">
-                                    <img src="./images/blog3.jpeg" alt="">
-                                    <div class="blog-details">
-                                        <h6>Delicious prawn</h6>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, maiores.
-                                        </p>
-                                        <small>23 January, 2020</small>
-                                    </div>
+                        </div>
+                        <div class="col-md-4 col-6 col-sm-6">
+                            <div class="blog-info">
+                                <img src="./images/blogs/blog3.jpeg" alt="">
+                                <div class="blog-details">
+                                    <h6>Delicious prawn</h6>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, maiores.
+                                    </p>
+                                    <small>23 January, 2020</small>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-6 col-sm-6">
-                                <div class="blog-info">
-                                    <img src="./images/blog1.jpeg" alt="">
-                                    <div class="blog-details">
-                                        <h6>Rui mach</h6>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, maiores.
-                                        </p>
-                                        <small>23 January, 2020</small>
-                                    </div>
+                        </div>
+                        <div class="col-md-4 col-6 col-sm-6">
+                            <div class="blog-info">
+                                <img src="./images/blogs/blog1.jpeg" alt="">
+                                <div class="blog-details">
+                                    <h6>Rui mach</h6>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, maiores.
+                                    </p>
+                                    <small>23 January, 2020</small>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-6 col-sm-6">
-                                <div class="blog-info">
-                                    <img src="./images/blog2.jpeg" alt="">
-                                    <div class="blog-details">
-                                        <h6>lamb stack</h6>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, maiores.
-                                        </p>
-                                        <small>23 January, 2020</small>
-                                    </div>
+                        </div>
+                        <div class="col-md-4 col-6 col-sm-6">
+                            <div class="blog-info">
+                                <img src="./images/blogs/blog2.jpeg" alt="">
+                                <div class="blog-details">
+                                    <h6>lamb stack</h6>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, maiores.
+                                    </p>
+                                    <small>23 January, 2020</small>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
         </section>
+
         <br><br>
+
     </main>
+
     <footer>
         <div class="footer">
             <br><br><br>
@@ -412,13 +421,13 @@
                                 <h6>Quick Link</h6>
                                 <div class="link">
                                     <a href="index.html">Home</a>
-                                    <a href="product.html">Product</a>
+                                    <a href="shop.html">Shop</a>
                                     <a href="about.html">About</a>
                                     <a href="blog.html">Blog</a>
                                 </div>
                             </div>
                             <div class="location col-md-6 col-12 col-sm-10 d-flex">
-                                <img src="./images/location-icon.png" alt="">
+                                <img src="./images/icons/location-icon.png" alt="">
                                 <p>Road - 01, Block - F Niketan, Dhaka, Bangladesh</p>
                             </div>
                         </div>
@@ -429,6 +438,7 @@
             </div>
         </div>
     </footer>
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -438,6 +448,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+
 </body>
 
 </html>

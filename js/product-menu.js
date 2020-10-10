@@ -1,54 +1,27 @@
 const offBtn=document.getElementById('off-btn');
-// // const off=document.getElementById('off');
-// // offBtn.addEventListener('click',function(event){  
-// //     if(off.style.display ==='none'){
-// //         off.style.display = 'block';
-// //     }
-// //     else{
-// //         off.style.display = 'none';
-// //     }
+const closeBtn=document.getElementById('close-btn');
+const sideBar=document.getElementById('see-side');
+offBtn.addEventListener('click',function(){  
+    offBtn.style.display='none';
+    closeBtn.style.display='block';
+    sideBar.style.width='100%';
+})
 
-// // })
+closeBtn.addEventListener('click',function(event){  
+  offBtn.style.display='block';
+  closeBtn.style.display='none';
+  sideBar.style.width='0%';
+  sideBar.style.transition='0.2s';
+})
 
-// document.body.addEventListener('click', function (event) {
-//     const offBtn = document.getElementById('off-btn');
-//     const off = document.getElementById('off');
-//     const menu1 = document.getElementById('menu1');
-//     const menu2 = document.getElementById('menu2');
-//     const menu3 = document.getElementById('menu3');
-//     const menu4 = document.getElementById('menu4');
-//     const menu5 = document.getElementById('menu5');
-//     const menu6 = document.getElementById('menu6');
-//     const menu7 = document.getElementById('menu7');
-//     const menu8 = document.getElementById('menu8');
-//     const range = document.getElementById('range');
-//     if (event.target.parentNode === offBtn) {
-//         if (off.style.display === 'none') {
-//             off.style.display = 'block';
-//         }
-//         else {
-//             off.style.display = 'none';
-//         }
-//     }
-//     else{
-//         if(event.target.parentNode!==menu1 && event.target.parentNode!==menu2 &&
-//             event.target.parentNode!==menu3 && event.target.parentNode!==menu4 &&
-//             event.target.parentNode!==menu5 && event.target.parentNode!==menu6 &&
-//             event.target.parentNode!==menu7 && event.target.parentNode!==menu8 &&
-//             event.target!==menu1 && event.target!==menu2 &&
-//             event.target!==menu3 && event.target!==menu4 &&
-//             event.target!==menu5 && event.target!==menu6 &&
-//             event.target!==menu7 && event.target!==menu8 &&
-//             event.target.parentNode!==range && event.target!==range
-//             ){
-//             off.style.display = 'none';
-//         }
-//     }
-// })
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-  }
-  
-  function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-  }
+
+const slider = document.getElementById("myinput")
+const min = slider.min
+const max = slider.max
+const value = slider.value
+
+slider.style.background = `linear-gradient(to right, #FFC729 0%, #FFC729 ${(value-min)/(max-min)*100}%, #DEE2E6 ${(value-min)/(max-min)*100}%, #DEE2E6 100%)`
+
+slider.oninput = function() {
+  this.style.background = `linear-gradient(to right, #FFC729 0%, #FFC729 ${(this.value-this.min)/(this.max-this.min)*100}%, #DEE2E6 ${(this.value-this.min)/(this.max-this.min)*100}%, #DEE2E6 100%)`
+};

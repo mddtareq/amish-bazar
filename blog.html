@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./images/favicon.png">
+    <link rel="icon" href="./images/icons/favicon.png">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/custom.css">
     <title>AMISH BAZAR</title>
@@ -13,9 +13,10 @@
 <body>
     <header>
         <!-- navbar -->
-        <div class="container">
-            <nav class="navbar navbar-expand-md navbar-light">
-                <a class="navbar-brand" href="index.html"><img src="./images/logo.png" alt=""></a>
+        <div class="fixed-top">
+            <nav class="navbar navbar-expand-md navbar-light bg-white">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html"><img src="./images/logos/logo.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -24,30 +25,31 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
+                        <li class="nav-item ">
                             <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="product.html">Product</a>
+                            <a class="nav-link" href="shop.html">Shop</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item active">
                             <a class="nav-link" href="blog.html">Blog</a>
                         </li>
                         <li class="nav-item single-line d-flex">
                             <a class="nav-link cart-show">
                                 <button data-toggle="modal" data-target="#cart" class="yellow-btn">
-                                    <img src="./images/bcart.png" alt="">
+                                    <img src="./images/icons/bcart.png" alt="">
                                 </button>
                                 <div class="red-dot"></div>
                             </a>
                             <a class="nav-link">
                                 <button data-toggle="modal" data-target="#login" class="yellow-btn">
-                                    <img src="./images/people.png" alt="">
+                                    <img src="./images/icons/people.png" alt="">
                                 </button>
                             </a>
                         </li>
                     </ul>
 
+                </div>
                 </div>
             </nav>
         </div>
@@ -255,12 +257,12 @@
         <section>
             <div class="container">
                 <div class="blog-review">
-                    <div class="container">
+                    <div class="blog-width m-auto">
                         <div class="row">
-                            <div class="col-md-6 col-sm-6 col-12">
-                                <a href="singleBlog.html"><img src="./images/blog4.jpeg" alt=""></a>
+                            <div class="blog-1 col-md-6 col-sm-6 col-12">
+                                <a href="singleBlog.html"><img src="./images/blogs/blog4.jpeg" alt=""></a>
                             </div>
-                            <div class="col-md-6 col-sm-6 col-12">
+                            <div class="blog-information col-md-6 col-sm-6 col-12">
                                 <h4><a href="singleBlog.html">Chicken is important</a></h4>
                                 <small>Suva Karmaker | 6 June, 2020</small>
                                 <p></p>
@@ -270,7 +272,7 @@
                                     viverra et. Fermentum ultrices tortor pharetra ut congue.
                                 </p>
                             </div>
-                            <div class="col-md-6 col-sm-6 col-12">
+                            <div class="blog-information col-md-6 col-sm-6 col-12">
                                 <h4><a href="singleBlog.html">Chicken is important</a></h4>
                                 <small>Suva Karmaker | 6 June, 2020</small>
                                 <p></p>
@@ -280,8 +282,8 @@
                                     viverra et. Fermentum ultrices tortor pharetra ut congue.
                                 </p>
                             </div>
-                            <div class="col-md-6 col-sm-6 col-12">
-                                <a href="singleBlog.html"><img src="./images/blog4.jpeg" alt=""></a>
+                            <div class="blog-2 col-md-6 col-sm-6 col-12">
+                                <a href="singleBlog.html"><img src="./images/blogs/blog4.jpeg" alt=""></a>
                             </div>
                         </div>
                     </div>
@@ -292,94 +294,90 @@
         <!-- related blogs -->
         <section>
             <div class="container">
-                <h6>Related Blogs</h6>
-                <div class="row">
-                    <div class="col-md-4 col-6 col-sm-6">
-                        <div class="blog-info">
-                            <img src="./images/blog1.jpeg" alt="">
-                            <div class="blog-details">
-                                <h6>Chicken is important</h6>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, maiores.
-                                </p>
-                                <small>23 January, 2020</small>
+                <div class="blog-width m-auto">
+                    <h4>Related Blogs</h4>
+                    <div class="row">
+                        <div class="col-md-4 col-6 col-sm-6">
+                            <div class="blog-info">
+                                <img src="./images/blogs/blog1.jpeg" alt="">
+                                <div class="blog-details">
+                                    <h6>Chicken is important</h6>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, maiores.
+                                    </p>
+                                    <small>23 January, 2020</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6 col-sm-6">
+                            <div class="blog-info">
+                                <img src="./images/blogs/blog2.jpeg" alt="">
+                                <div class="blog-details">
+                                    <h6>Dul risus</h6>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, maiores.
+                                    </p>
+                                    <small>23 January, 2020</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6 col-sm-6">
+                            <div class="blog-info">
+                                <img src="./images/blogs/blog3.jpeg" alt="">
+                                <div class="blog-details">
+                                    <h6>Elementum cras</h6>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, maiores.
+                                    </p>
+                                    <small>23 January, 2020</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6 col-sm-6">
+                            <div class="blog-info">
+                                <img src="./images/blogs/blog3.jpeg" alt="">
+                                <div class="blog-details">
+                                    <h6>Delicious prawn</h6>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, maiores.
+                                    </p>
+                                    <small>23 January, 2020</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6 col-sm-6">
+                            <div class="blog-info">
+                                <img src="./images/blogs/blog1.jpeg" alt="">
+                                <div class="blog-details">
+                                    <h6>Rui mach</h6>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, maiores.
+                                    </p>
+                                    <small>23 January, 2020</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6 col-sm-6">
+                            <div class="blog-info">
+                                <img src="./images/blogs/blog2.jpeg" alt="">
+                                <div class="blog-details">
+                                    <h6>lamb stack</h6>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, maiores.
+                                    </p>
+                                    <small>23 January, 2020</small>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-6 col-sm-6">
-                        <div class="blog-info">
-                            <img src="./images/blog2.jpeg" alt="">
-                            <div class="blog-details">
-                                <h6>Dul risus</h6>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, maiores.
-                                </p>
-                                <small>23 January, 2020</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-6 col-sm-6">
-                        <div class="blog-info">
-                            <img src="./images/blog3.jpeg" alt="">
-                            <div class="blog-details">
-                                <h6>Elementum cras</h6>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, maiores.
-                                </p>
-                                <small>23 January, 2020</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-6 col-sm-6">
-                        <div class="blog-info">
-                            <img src="./images/blog3.jpeg" alt="">
-                            <div class="blog-details">
-                                <h6>Delicious prawn</h6>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, maiores.
-                                </p>
-                                <small>23 January, 2020</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-6 col-sm-6">
-                        <div class="blog-info">
-                            <img src="./images/blog1.jpeg" alt="">
-                            <div class="blog-details">
-                                <h6>Rui mach</h6>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, maiores.
-                                </p>
-                                <small>23 January, 2020</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-6 col-sm-6">
-                        <div class="blog-info">
-                            <img src="./images/blog2.jpeg" alt="">
-                            <div class="blog-details">
-                                <h6>lamb stack</h6>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, maiores.
-                                </p>
-                                <small>23 January, 2020</small>
-                            </div>
-                        </div>
-                    </div>
+                    <br>
+                    <hr>
                 </div>
-                <br>
-                <hr>
-            </div>
-            </div>
             </div>
         </section>
         <!-- our products -->
         <section>
             <div class="container">
-                <h6>Our Products</h6>
-                <small>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non nulla arcu habitant
-                    sollicitudin.</small>
                 <div class="products">
-                    <div class="container-sm">
+                    <div class="">
                         <div class="row">
-                            <div class="col-md-3 col-6 col-sm-6">
+                            <div class="col-md-4 col-lg-3 col-6 col-sm-6">
                                 <div class="product cart">
-                                    <img src="./images/amish1.png" alt="">
+                                    <img src="./images/shop-items/amish1.png" alt="">
                                     <div class="product-info text-center">
                                         <h6>Beef Raw Meat</h6>
                                         <small>500 gm</small>
@@ -389,9 +387,9 @@
                                     <button class="red-btn">Add to cart</button>
                                 </div>
                             </div>
-                            <div class="col-md-3 col-6 col-sm-6">
+                            <div class="col-md-4 col-lg-3 col-6 col-sm-6">
                                 <div class="product cart">
-                                    <img src="./images/amish1.png" alt="">
+                                    <img src="./images/shop-items/amish1.png" alt="">
                                     <div class="product-info text-center">
                                         <h6>Beef Raw Meat</h6>
                                         <small>500 gm</small>
@@ -401,9 +399,9 @@
                                     <button class="red-btn">Add to cart</button>
                                 </div>
                             </div>
-                            <div class="col-md-3 col-6 col-sm-6">
+                            <div class="col-md-4 col-lg-3 col-6 col-sm-6">
                                 <div class="product cart">
-                                    <img src="./images/amish1.png" alt="">
+                                    <img src="./images/shop-items/amish1.png" alt="">
                                     <div class="product-info text-center">
                                         <h6>Beef Raw Meat</h6>
                                         <small>500 gm</small>
@@ -413,9 +411,9 @@
                                     <button class="red-btn">Add to cart</button>
                                 </div>
                             </div>
-                            <div class="col-md-3 col-6 col-sm-6">
+                            <div class="col-md-4 col-lg-3 col-6 col-sm-6">
                                 <div class="product cart">
-                                    <img src="./images/amish1.png" alt="">
+                                    <img src="./images/shop-items/amish1.png" alt="">
                                     <div class="product-info text-center">
                                         <h6>Beef Raw Meat</h6>
                                         <small>500 gm</small>
@@ -425,9 +423,9 @@
                                     <button class="red-btn">Add to cart</button>
                                 </div>
                             </div>
-                            <div class="col-md-3 col-6 col-sm-6">
+                            <div class="col-md-4 col-lg-3 col-6 col-sm-6">
                                 <div class="product cart">
-                                    <img src="./images/amish1.png" alt="">
+                                    <img src="./images/shop-items/amish1.png" alt="">
                                     <div class="product-info text-center">
                                         <h6>Beef Raw Meat</h6>
                                         <small>500 gm</small>
@@ -437,9 +435,9 @@
                                     <button class="red-btn">Add to cart</button>
                                 </div>
                             </div>
-                            <div class="col-md-3 col-6 col-sm-6">
+                            <div class="col-md-4 col-lg-3 col-6 col-sm-6">
                                 <div class="product cart">
-                                    <img src="./images/amish1.png" alt="">
+                                    <img src="./images/shop-items/amish1.png" alt="">
                                     <div class="product-info text-center">
                                         <h6>Beef Raw Meat</h6>
                                         <small>500 gm</small>
@@ -449,9 +447,9 @@
                                     <button class="red-btn">Add to cart</button>
                                 </div>
                             </div>
-                            <div class="col-md-3 col-6 col-sm-6">
+                            <div class="col-md-4 col-lg-3 col-6 col-sm-6">
                                 <div class="product cart">
-                                    <img src="./images/amish1.png" alt="">
+                                    <img src="./images/shop-items/amish1.png" alt="">
                                     <div class="product-info text-center">
                                         <h6>Beef Raw Meat</h6>
                                         <small>500 gm</small>
@@ -461,9 +459,9 @@
                                     <button class="red-btn">Add to cart</button>
                                 </div>
                             </div>
-                            <div class="col-md-3 col-6 col-sm-6">
+                            <div class="col-md-4 col-lg-3 col-6 col-sm-6">
                                 <div class="product cart">
-                                    <img src="./images/amish1.png" alt="">
+                                    <img src="./images/shop-items/amish1.png" alt="">
                                     <div class="product-info text-center">
                                         <h6>Beef Raw Meat</h6>
                                         <small>500 gm</small>
@@ -477,7 +475,7 @@
                     </div>
                 </div>
             </div>
-            <div class="text-center">
+            <div class="view-all text-center">
                 <br><br>
                 <button class="text-center yellow-btn">View all Products</button>
             </div>
@@ -502,13 +500,13 @@
                                 <h6>Quick Link</h6>
                                 <div class="link">
                                     <a href="index.html">Home</a>
-                                    <a href="product.html">Product</a>
+                                    <a href="shop.html">Shop</a>
                                     <a href="about.html">About</a>
                                     <a href="blog.html">Blog</a>
                                 </div>
                             </div>
                             <div class="location col-md-6 col-12 col-sm-10 d-flex">
-                                <img src="./images/location-icon.png" alt="">
+                                <img src="./images/icons/location-icon.png" alt="">
                                 <p>Road - 01, Block - F Niketan, Dhaka, Bangladesh</p>
                             </div>
                         </div>
