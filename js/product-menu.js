@@ -1,21 +1,35 @@
 const offBtn = document.getElementById('off-btn');
-const closeBtn = document.getElementById('close-btn');
 const sideBar = document.getElementById('see-side');
-const custom = document.getElementById('custom');
+const products = document.getElementById('all-products');
+const width  = window.innerWidth || document.documentElement.clientWidth || 
+document.body.clientWidth;
 offBtn.addEventListener('click', function () {
-  offBtn.style.display = 'none';
-  closeBtn.style.display = 'block';
-  sideBar.style.width = '100%';
-  sideBar.style.transition='1.5s';
-
+  if(width>575){
+    if(sideBar.style.width ==='0px'){
+      sideBar.style.transition='1.5s';
+      products.style.marginLeft = '200px';
+      sideBar.style.width = '200px';
+    }
+    else{
+      sideBar.style.transition='.8s';
+      sideBar.style.width = '0px';
+      products.style.marginLeft = '0px';
+    }
+  }
+  else{
+    if(sideBar.style.width ==='200px'){
+      sideBar.style.transition='1.5s';
+      products.style.marginLeft = '0px';
+      sideBar.style.width = '0px';
+    }
+    else{
+      sideBar.style.transition='.8s';
+      sideBar.style.width = '200px';
+      products.style.marginLeft = '200px';
+    }
+  }
 })
 
-closeBtn.addEventListener('click', function (event) {
-  offBtn.style.display = 'block';
-  closeBtn.style.display = 'none';
-  sideBar.style.width = '0%';
-  sideBar.style.transition = '1s';
-})
 
 
 const slider = document.getElementById("myinput")
