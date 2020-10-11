@@ -6,12 +6,12 @@ document.body.clientWidth;
 offBtn.addEventListener('click', function () {
   if(width>575){
     if(sideBar.style.width ==='0px'){
-      sideBar.style.transition='1.5s';
+      sideBar.style.transition='0.3s';
       products.style.marginLeft = '200px';
       sideBar.style.width = '200px';
     }
     else{
-      sideBar.style.transition='.8s';
+      sideBar.style.transition='.3s';
       sideBar.style.width = '0px';
       products.style.marginLeft = '0px';
     }

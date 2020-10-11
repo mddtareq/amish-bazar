@@ -51,17 +51,18 @@
 
 
     <main>
-        <!-- modal login -->
+               <!-- modal login -->
 
-        <div id="login" class="login-modal modal fade" role="dialog">
-            <div class="modal-dialog">
+        <!-- Modal -->
+        <div id="login" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="login">
                         <h3 class="text-center">WelCome</h3>
                         <br>
                         <div class="container-fluid">
                             <div class="row">
-                                <div class="col-md-12 text-center">
+                                <div class="col-md-12 modal-button text-center">
                                     <form action="">
                                         <input class="form-control" type="email" placeholder="Email Address">
                                         <p></p>
@@ -84,7 +85,7 @@
         <!-- modal registration -->
 
         <div class="modal fade" id="registration">
-            <div class="modal-dialog">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
                 <div class="modal-content">
                     <div class="registration">
                         <h3 class="text-center">Sign Up for Free</h3>
@@ -94,12 +95,18 @@
                         <br>
                         <form action="">
                             <div class="container-fluid">
-                                <div class="row">
+                                <div class="row modal-button">
                                     <div class="col-md-6 col-sm-6 col-12">
                                         <input class="form-control" type="email" placeholder="Email Address">
                                     </div>
                                     <div class="col-md-6 col-sm-6 col-12">
-                                        <input class="form-control" type="email" placeholder="Username">
+                                        <input class="form-control" type="text" placeholder="Username">
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-12">
+                                        <input class="form-control" type="text" placeholder="Your Name">
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-12">
+                                        <input class="form-control" type="text" placeholder="Address">
                                     </div>
                                     <div class="col-md-6 col-sm-6 col-12">
                                         <input class="form-control" type="password" placeholder="Password">
@@ -111,12 +118,14 @@
                                         <button type="button" class="yellow-btn">Register</button>
                                     </div>
                                 </div>
+                                <br>
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
+
 
         <!-- introduction -->
 
