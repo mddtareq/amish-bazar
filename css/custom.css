@@ -10,7 +10,7 @@
 /* navbar */
 
 .navbar img{
-    width: 150px;
+    width: 200px;
 }
 
 .navbar-brand img{
@@ -18,25 +18,25 @@
 }
 
 .navbar .yellow-btn{
+    border-radius:2px!important;
     height: 30px;
     margin-top: 0px;
     font-weight: 600;
     outline:none!important;
     border: none;
     background-color:#FFC729;
-    border-radius:2px;
     font-weight: 600px;
     padding:3px 15px 3px 15px;
 }
 
 .yellow-btn{
     overflow: hidden;
-    height: 60px;
+    height: 53px;
     font-weight: 600;
     outline:none!important;
     border: none;
     background-color:#FFC729;
-    border-radius:2px;
+    border-radius: 0px 0px 5px 5px;
     font-weight: 600px;
     padding:10px 15px 10px 15px;
 }
@@ -143,16 +143,19 @@ header{
 
 .intro-info button{
     height: 40px;
-    padding:5px 15px 8px 15px;
+    border-radius: 5px;;
+    padding:5px 25px 8px 25px;
 }
 
 .red-btn{
+    height: 45px;
     background-color:#EB5757;
     outline:none!important;
     border: none;
-    border-radius:3px;
+    color:white;
+    border-radius:5px;
     font-weight: 600px;
-    padding:10px 15px 10px 15px;
+    padding:10px 40px 10px 40px;
     
 }
 
@@ -162,13 +165,57 @@ header{
     box-shadow: 0px 20px 35px rgba(255, 64, 64, 0.25);
 }
 
+.yellow-sh .red-btn{
+    color: black;
+    box-shadow: 0px 20px 35px rgba(255, 199, 41, 0.35);
+}
+
+.yellow-sh .yellow-btn{
+    padding-top: 8px;
+    padding-left: 30px!important;
+    padding-right: 30px !important;
+    border-radius: 3px;
+    color: black;
+    font-size: bold;
+    box-shadow: 0px 20px 35px rgba(255, 199, 41, 0.35);
+}
+
 /* fix icon right side */
 
 .fix{
     top:30%;
     right:0;
+    border-radius: 10px 0px 0px 10px;
     position: fixed;
+    background-color:white;
+    height: 95px;
+    width: 65px;
     z-index: 1;
+    box-shadow: -20px 0px 45px rgba(89, 112, 172, 0.25);
+}
+
+.fix-info{
+    color: #FECF4B;
+    background-color:#2D2C2C;
+    border-radius: 0px 0px 0px 8px;
+}
+
+.fix-info p{
+    padding-top: 5px;
+    text-align: center;
+    font-size:10px;
+    margin-bottom: 0;
+}
+.fix-info h6{
+    font-size: 13px;
+    text-align: center;
+    margin-top: 0;
+   padding-bottom: 10px;
+}
+
+.fix img{
+    width: 90%;
+    margin:auto;
 }
 
 @media only screen and (max-width:575px){
@@ -196,14 +243,19 @@ header{
 }
 
 .cat-info{
-    padding:15px;
-    margin-right: 10px;
-    background-color:rgba(236, 229, 229, 0.685);
+    width: 130px;
+    height: 130px;
+    margin-right: 30px;
+    background-color:#f2f2f2;
+}
+
+.cat-info-1{
+    box-shadow: 0px 15px 45px rgba(140, 140, 140, 0.15);
 }
 
 .cat-info img{
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
 }
 
 .category{
@@ -217,14 +269,15 @@ header{
 @media only screen and (max-width:575px){
 
     .cat-info{
-        padding:5px;
-        margin-right: 5px;
-        background-color:rgba(236, 229, 229, 0.685);
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+        background-color:#f2f2f2;
     }
     
     .cat-info img{
-        width: 35px;
-        height: 35px;
+        width: 15px;
+        height: 15px;
     }
 
     .category{
@@ -232,7 +285,7 @@ header{
     }
 
     .cat-info small{
-        font-size:12px;
+        font-size:10px;
     }
 
     .category h2{
@@ -243,9 +296,16 @@ header{
 
 @media only screen and (min-width: 576px) and (max-width:767px){
     
+    .cat-info{
+        width: 100px;
+        height: 100px;
+        margin-right: 10px;
+        background-color:#f2f2f2;
+    }
+    
     .cat-info img{
-        width: 60px;
-        height: 60px;
+        width: 25px;
+        height: 25px;
     }
     .category{
         margin-top: 0px;
@@ -255,11 +315,11 @@ header{
 /* products */
 
 .plus-minus button{
-    font-weight: 600;
+    font-size:20px;
     outline:none!important;
     border: none;
-    border-radius:3px;
-    font-weight: 600px;
+    border-radius: 0px 0px 5px 5px;
+    font-weight: 700px;
     color:white;
     border-right: 1px solid rgb(255, 255, 255);
     border-left: 1px solid rgb(255, 255, 255);
@@ -268,7 +328,8 @@ header{
 }
 
 .plus-minus p{
-    height: 59px;
+    border-radius: 0px 0px 1px 1px;
+    height: 52px;
     color:white;
     margin: 0;
     overflow: hidden;
@@ -276,7 +337,7 @@ header{
     background-color: rgb(2, 2, 2);
     width: 50%;
     padding:10px 15px 10px 15px;
-    font-size:10px;
+    font-size:12px;
 }
 
 .products{
@@ -336,7 +397,7 @@ header{
 .blog{
     background-image: url(../images/bg/Group87.png),url(../images/bg/Group36.png);
     background-repeat: no-repeat;
-    background-position: right 80%,left 60%;
+    background-position:90% 80%,5% 60%;
 }
 
 .blog h2{
@@ -355,6 +416,7 @@ header{
 }
 
 .blog-info img{
+    border-radius: 3px;
     width: 100%;
     height: 220px;
 }
@@ -441,30 +503,15 @@ header{
 
 
 #off-btn img{
-    margin-top: -11px;
+    margin-top: -12px;
     cursor: pointer;
     margin-right: 10px;
     outline:none;
     border: none;
     width:20px;
-    height:20px;
+    height:16px;
 }
 
-#close-btn{
-    display: none;
-    border: none;
-}
-
-
-#close-btn img{
-    margin-top: -11px;
-    cursor: pointer;
-    margin-right: 10px;
-    outline:none;
-    border: none;
-    width:20px;
-    height:15px;
-}
 
 .menu p{
     margin-left:20px ;
@@ -472,18 +519,22 @@ header{
 }
 
 .all-products{
-    position:relative
+    margin-left: 200px;
+    transition: 1.5s;
+}
+
+.shop-products{
+    display:flex;
 }
 
 .see-side{
-    overflow: hidden;
-    background-color:none;;
+    width:200px;
+    z-index: 1;
     overflow: hidden;
     transition: 1.5s;
-    margin-top: 35px;
-    width: 0px;
-    left:0px;
+    margin-top: 20px;
     position:absolute;
+    box-shadow: 0px 15px 45px rgba(196, 189, 189, 0.25);
 }
 
 .see-side a {
@@ -515,21 +566,22 @@ header{
     overflow: hidden;
     box-shadow: 0px 15px 45px rgba(171, 171, 171, 0.25);
     width: 100%;
-    height: 100px;
+    height: 130px;
     border: none;
-    border-top-right-radius: 100%;
-    border-bottom-right-radius: 100%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
 }
 
 .range h6,.range small{
-    margin:0;
+    margin-top:30px;
+    margin-bottom:0px;
     margin-left: 30px;
 }
 
 .range input
 {
     width: 70%;
-    height: 3px;
+    height: 1px;
     margin-top:10px;
     margin-left: 30px;
 }
@@ -537,7 +589,7 @@ header{
 input[type="range"] {
     -webkit-appearance: none;
     -moz-appearance: none;
-    height: 5px;
+    height: 1px;
     padding: 0;
     border-radius: 2px;
     outline: none;
@@ -551,15 +603,26 @@ input[type="range"] {
     -webkit-appearance: none;
     -moz-appearance: none;
     -webkit-border-radius: 5px;
-    height: 16px;
-    width: 16px;
+    height: 8px;
+    width: 8px;
     border-radius: 50px;
     background: #FFC729;
     border: 1px solid #c5c5c5;
   }
 
 @media only screen and (max-width:575px){
-
+    .shop-products{
+        position: relative;
+    }
+    .see-side{
+        background-color: white;
+        position:absolute;
+        z-index: 1;
+        width: 0px;
+    }
+    .all-products{
+        margin-left:0px!important;
+    }
 }
 
 @media only screen and (min-width: 576px) and (max-width:767px){
@@ -741,7 +804,27 @@ input[type="range"] {
     margin-left: 15px;
     border: 1px solid rgb(216, 202, 202);
     width:150px!important;
-    height: 5px;
+    height: 9px;
+    border-radius:50px;
+}
+
+.total-review .line2{
+    background: linear-gradient(80deg, #FFC729 70%, #F2F2F2 20%);
+    margin-top: 10px;
+    margin-left: 15px;
+    border: 1px solid rgb(216, 202, 202);
+    width:150px!important;
+    height: 9px;
+    border-radius:50px;
+}
+
+.total-review .line3{
+    background: linear-gradient(80deg, #FFC729 50%, #F2F2F2 20%);
+    margin-top: 10px;
+    margin-left: 15px;
+    border: 1px solid rgb(216, 202, 202);
+    width:150px!important;
+    height: 9px;
     border-radius:50px;
 }
 
@@ -773,6 +856,8 @@ input[type="range"] {
 }
 
 .single{
+    font-size: 13px;
+    margin-top: 2px;
     height: 20px;
     width: 80px;
     border-radius: 25px;
@@ -780,6 +865,7 @@ input[type="range"] {
 }
 
 .cartPlus{
+    font-size: 13px;
     border-radius: 100%;
     height: 20px;
     width: 20px;
@@ -788,6 +874,7 @@ input[type="range"] {
 }
 
 .cartMinus{ 
+    font-size: 13px;
     text-align: center;
     border-radius: 100%;
     height: 20px;
@@ -797,6 +884,7 @@ input[type="range"] {
 }
 
 .items{
+    font-size: 13px;
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -811,10 +899,12 @@ input[type="range"] {
 }
 
 .login h3{
-    padding-top:10px;
+    padding-top:30px;
 }
 
 .login input{
+    margin:auto;
+    width:80%;
     background-color:#CFCFCF;
 }
 
@@ -822,14 +912,17 @@ input[type="range"] {
     text-align: center;
 }
 
-.reg a{
-    color:rgba(0, 0, 0, 0.685);
+.login a{
     cursor: pointer;
 }
 
-.reg {
-    font-size:12px;
-    color:rgba(0, 0, 0, 0.685);
+.modal-button .yellow-btn{
+    border-radius:2px;
+    height: 40px;
+    padding-left: 40px!important;
+    padding-right: 40px !important;
+    color: black;
+    box-shadow: 0px 20px 35px rgba(255, 199, 41, 0.35);
 }
 
 /* registration modal*/
@@ -842,12 +935,12 @@ input[type="range"] {
 }
 
 .registration h3{
-    padding-top:10px;
+    padding-top:30px;
 }
 
 .registration input{
     background-color:#CFCFCF;
-    margin-bottom: 15px;;
+    margin-bottom: 15px;
 }
 
 .registration input::placeholder{
@@ -866,39 +959,50 @@ input[type="range"] {
 /* modal */
 
 #login .modal-dialog{
-    width: 40%;
-    margin-top:250px;
+    width: 350px;
 }
 #registration .modal-dialog{
-    margin-top:250px;
-    width: 100%;
+    
 }
 #cart .modal-dialog{
-    margin-top:130px;
     width: 50%;
+}
+
+.cart-font{
+    font-weight:600;
 }
 
 @media only screen and (max-width:575px){
 
+    .login input{
+        width:95%;
+    }
+
     #login .modal-dialog{
-        width: 95%!important;
-        margin-top:250px;
+        margin: auto;
+        width: 90%!important;
     }
 
     #registration .modal-dialog{
-        margin-top:250px;
         width: 95%!important;
     }
 
     #cart .modal-dialog{
-        margin-top:130px;
-        width: 95%!important;
+        margin-top:60px;
+        width: 85%!important;
+    }
+
+    .single{
+        width: 60px;
     }
 
 }
 
 @media only screen and (min-width: 576px) and (max-width:767px){
 
+    #login .modal-dialog{
+        width: 350px!important;
+    }
 
 }
 
