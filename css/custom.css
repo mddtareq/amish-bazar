@@ -248,6 +248,11 @@ header{
     overflow: hidden;
 }
 
+.all-category a {
+    color: black;
+    text-decoration: none;
+}
+
 .cat-info{
     width: 130px;
     height: 130px;
@@ -1003,8 +1008,8 @@ input[type="range"] {
     }
 
     #cart .modal-dialog{
-        margin-top:60px;
-        width: 85%!important;
+        margin-top:50px;
+        width: 94%!important;
     }
 
     .single{
