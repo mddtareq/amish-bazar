@@ -628,6 +628,7 @@ input[type="range"] {
     .see-side{
         background-color: white;
         position:absolute;
+        left: 0;
         z-index: 1;
         width: 0px;
     }
@@ -639,10 +640,10 @@ input[type="range"] {
 @media only screen and (min-width: 576px)and (max-width: 1199px){
 
     .see-side{
-        width: 250px;
+        width: 280px;
     }
     .all-products{
-        margin-left:250px;
+        margin-left:280px;
     }
 }
 
