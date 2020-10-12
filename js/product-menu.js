@@ -30,15 +30,15 @@ offBtn.addEventListener('click', function () {
   }
   else {
     console.log(width, "choto")
-    if (sideBar.style.width === '200px') {
+    if (sideBar.style.width === '280px') {
       sideBar.style.transition = '0.3s';
       products.style.marginLeft = '0px';
       sideBar.style.width = '0px';
     }
     else {
       sideBar.style.transition = '.3s';
-      sideBar.style.width = '200px';
-      products.style.marginLeft = '200px';
+      sideBar.style.width = '280px';
+      products.style.marginLeft = '280px';
     }
   }
   // if(width<1200){
