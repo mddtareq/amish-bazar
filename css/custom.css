@@ -48,8 +48,8 @@
 }
 
 .yellow-btn img{
-    width: 15px;
-    height: 20px;
+    width: 17px;
+    height: 19px;
 }
 
 .nav-item a{
@@ -62,6 +62,11 @@
 
 .custom-nav a{
     margin-top: 0px;
+}
+
+.custom-nav p{
+    font-size:16px;
+    margin-top:-2px;
 }
 
 .navbar-nav li{
@@ -804,6 +809,10 @@ input[type="range"] {
     width: 100%;
 }
 
+#main-image{
+    height: 250px;
+}
+
 .small-pic{
     margin-top:20px;
     margin-bottom: 20px;
@@ -876,35 +885,39 @@ input[type="range"] {
 }
 
 .single{
-    font-size: 13px;
+    overflow: hidden;
+    font-size: 14px;
     margin-top: 2px;
-    height: 20px;
+    height: 25px;
     width: 80px;
     border-radius: 25px;
     background-color:#FFC729;
 }
 
 .cartPlus{
-    font-size: 13px;
+    margin-top:-1px;
+    font-size: 15px;
     border-radius: 100%;
-    height: 20px;
-    width: 20px;
+    height: 25px;
+    width: 25px;
     background-color:rgba(128, 128, 128, 0.301);
     cursor: pointer;
 }
 
 .cartMinus{ 
-    font-size: 13px;
+    margin-top:-1px;
+    font-size: 15px;
     text-align: center;
     border-radius: 100%;
-    height: 20px;
-    width: 20px;
+    height: 25px;
+    width: 25px;
     background-color:rgba(128, 128, 128, 0.301);
     cursor: pointer;
 }
 
 .items{
-    font-size: 13px;
+    margin-top:-1px;
+    font-size: 15px;
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -939,8 +952,10 @@ input[type="range"] {
 .modal-button .yellow-btn{
     border-radius:2px;
     height: 40px;
-    padding-left: 40px!important;
-    padding-right: 40px !important;
+    padding-top: 0;
+    padding-bottom:0;
+    padding-left: 50px!important;
+    padding-right: 50px !important;
     color: black;
     box-shadow: 0px 20px 35px rgba(255, 199, 41, 0.35);
 }
@@ -985,7 +1000,7 @@ input[type="range"] {
     
 }
 #cart .modal-dialog{
-    width: 50%;
+    width: 400px!important;
 }
 
 .cart-font{
@@ -1013,7 +1028,7 @@ input[type="range"] {
     }
 
     .single{
-        width: 60px;
+        width: 65px;
     }
 
 }
@@ -1022,6 +1037,9 @@ input[type="range"] {
 
     #login .modal-dialog{
         width: 350px!important;
+    }
+    #cart .modal-dialog{
+        width: 400px!important;
     }
 
 }
