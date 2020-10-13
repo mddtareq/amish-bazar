@@ -109,7 +109,7 @@ function addPrice(id, quantity, onePrice) {
     const price = document.getElementById(id).innerText;
     const priceNumber = parseFloat(price);
     const updatedPrice = quantity * onePrice;
-    document.getElementById(id).innerText = (updatedPrice).toFixed(2);
+    document.getElementById(id).innerText = (updatedPrice).toFixed(0);
     return updatedPrice;
 }
 
@@ -123,5 +123,5 @@ function singlePrice(id, quantity) {
 function total(id, singlePrice) {
     const total = document.getElementById(id).innerText;
     const totalNumber = parseFloat(total);
-    document.getElementById(id).innerText = (totalNumber + singlePrice).toFixed(2);
+    document.getElementById(id).innerText = (totalNumber + singlePrice).toFixed(0);
 }
