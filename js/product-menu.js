@@ -41,30 +41,6 @@ offBtn.addEventListener('click', function () {
       products.style.marginLeft = '280px';
     }
   }
-  // if(width<1200){
-  //   if(sideBar.style.width ==='0px'){
-  //     sideBar.style.transition='0.3s';
-  //     products.style.marginLeft = '250px';
-  //     sideBar.style.width = '250px';
-  //   }
-  //   else{
-  //     sideBar.style.transition='.3s';
-  //     sideBar.style.width = '0px';
-  //     products.style.marginLeft = '0px';
-  //   }
-  // }
-  // else{
-  //   if(sideBar.style.width ==='250px'){
-  //     sideBar.style.transition='1.5s';
-  //     products.style.marginLeft = '0px';
-  //     sideBar.style.width = '0px';
-  //   }
-  //   else{
-  //     sideBar.style.transition='.8s';
-  //     sideBar.style.width = '250px';
-  //     products.style.marginLeft = '250px';
-  //   }
-  // }
 })
 
 

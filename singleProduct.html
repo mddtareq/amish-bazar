@@ -41,13 +41,13 @@
                             </li>
                             <li class="nav-item single-line d-flex">
                                 <a class="nav-link cart-show">
-                                    <button data-toggle="modal" data-target="#cart" class="yellow-btn">
+                                    <button data-toggle="modal" data-target="#cart" class="yellow-btn d-flex align-items-center justify-content-center">
                                         <img src="./images/icons/bcart.png" alt="">
                                     </button>
                                     <div class="red-dot"></div>
                                 </a>
                                 <a class="nav-link">
-                                    <button data-toggle="modal" data-target="#login" class="yellow-btn">
+                                    <button data-toggle="modal" data-target="#login" class="yellow-btn d-flex align-items-center justify-content-center">
                                         <img src="./images/icons/people.png" alt="">
                                     </button>
                                 </a>
@@ -62,14 +62,14 @@
     <br><br>
     <main>
 
-               <!-- modal login -->
+                     <!-- modal login -->
 
         <!-- Modal -->
         <div id="login" class="modal fade" role="dialog">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="login">
-                        <h3 class="text-center">WelCome</h3>
+                        <h3 class="text-center">Welcome</h3>
                         <br>
                         <div class="container-fluid">
                             <div class="row">
@@ -141,7 +141,7 @@
 
         <!-- Modal -->
         <div class="modal fade" id="cart">
-            <div class="modal-dialog modal-dialog-centered modal-sm">
+            <div class="modal-dialog modal-dialog-centered modal-md">
                 <div class="modal-content">
                     <div class="cart-items">
                         <br>
@@ -155,20 +155,20 @@
                             <div class="col-md-10 col-sm-10 col-10">
                                 <div class="row">
                                     <div class="cart-font col-md-8 col-sm-8 col-8">Chicken Meat</div>
-                                    <div class="col-md-4 col-sm-4 col-4">৳ 400</div>
+                                    <div class="col-md-4 col-sm-4 col-4">৳ <span id="subTotal1">400</span></div>
                                     <div class="col-md-10 col-sm-8 col-8">
                                         <p></p>
                                         <div class="row ">
                                             <div class="col-md-5 col-sm-6 col-5">
                                                 <p class="single d-flex align-items-center justify-content-center">৳
-                                                    200</p>
+                                                    <span id="itemTotal1">200</span>/kg</p>
                                             </div>
                                             <div class="col-md-6 col-sm-6 col-7 d-flex align-items-center">
-                                                <p class="cartMinus d-flex align-items-center justify-content-center">
+                                                <p id="cartMinus1" class="cartMinus d-flex align-items-center justify-content-center">
                                                     -
                                                 </p>
-                                                <p class="items">2</p>
-                                                <p class="cartPlus d-flex align-items-center justify-content-center">
+                                                <p class="items"><span id="itemQuantity1">2</span></p>
+                                                <p id="cartPlus1" class="cartPlus d-flex align-items-center justify-content-center">
                                                     +
                                                 </p>
                                             </div>
@@ -178,20 +178,20 @@
                                 <hr>
                                 <div class="row">
                                     <div class="cart-font col-md-8 col-sm-8 col-8">Chicken Meat</div>
-                                    <div class="col-md-4 col-sm-4 col-4">৳ 400</div>
+                                    <div class="col-md-4 col-sm-4 col-4">৳ <span id="subTotal2">400</span></div>
                                     <div class="col-md-10 col-sm-8 col-8">
                                         <p></p>
                                         <div class="row">
                                             <div class="col-md-5 col-sm-6 col-5">
                                                 <p class="single d-flex align-items-center justify-content-center">৳
-                                                    200</p>
+                                                    <span id="itemTotal2">200</span>/kg</p>
                                             </div>
                                             <div class="col-md-6 col-sm-6 col-7 d-flex align-items-center">
-                                                <p class="cartMinus d-flex align-items-center justify-content-center">
+                                                <p id="cartMinus2" class="cartMinus d-flex align-items-center justify-content-center">
                                                     -
                                                 </p>
-                                                <p class="items">2</p>
-                                                <p class="cartPlus d-flex align-items-center justify-content-center">
+                                                <p class="items"><span id="itemQuantity2">2</span></p>
+                                                <p id="cartPlus2" class="cartPlus d-flex align-items-center justify-content-center">
                                                     +
                                                 </p>
                                             </div>
@@ -201,20 +201,20 @@
                                 <hr>
                                 <div class="row">
                                     <div class="cart-font col-md-8 col-sm-8 col-8">Chicken Meat</div>
-                                    <div class="col-md-4 col-sm-4 col-4">৳ 400</div>
+                                    <div class="col-md-4 col-sm-4 col-4">৳ <span id="subTotal3">400</span></div>
                                     <div class="col-md-10 col-sm-8 col-8">
                                         <p></p>
                                         <div class="row">
                                             <div class="col-md-5 col-sm-6 col-5">
                                                 <p class="single d-flex align-items-center justify-content-center">৳
-                                                    200</p>
+                                                    <span id="itemTotal3">200</span>/kg</p>
                                             </div>
                                             <div class="col-md-6 col-sm-6 col-7 d-flex align-items-center">
-                                                <p class="cartMinus d-flex align-items-center justify-content-center">
+                                                <p id="cartMinus3" class="cartMinus d-flex align-items-center justify-content-center">
                                                     -
                                                 </p>
-                                                <p class="items">2</p>
-                                                <p class="cartPlus d-flex align-items-center justify-content-center">
+                                                <p class="items"><span id="itemQuantity3">2</span></p>
+                                                <p id="cartPlus3" class="cartPlus d-flex align-items-center justify-content-center">
                                                     +
                                                 </p>
                                             </div>
@@ -224,20 +224,20 @@
                                 <hr>
                                 <div class="row">
                                     <div class="cart-font col-md-8 col-sm-8 col-8">Chicken Meat</div>
-                                    <div class="col-md-4 col-sm-4 col-4">৳ 400</div>
+                                    <div class="col-md-4 col-sm-4 col-4">৳ <span id="subTotal4">400</span></div>
                                     <div class="col-md-10 col-sm-8 col-8">
                                         <p></p>
                                         <div class="row">
                                             <div class="col-md-5 col-sm-6 col-5">
                                                 <p class="single d-flex align-items-center justify-content-center">৳
-                                                    200</p>
+                                                    <span id="itemTotal4">200</span>/kg</p>
                                             </div>
                                             <div class="col-md-6 col-sm-6 col-7 d-flex align-items-center">
-                                                <p class="cartMinus d-flex align-items-center justify-content-center">
+                                                <p id="cartMinus4" class="cartMinus d-flex align-items-center justify-content-center">
                                                     -
                                                 </p>
-                                                <p class="items">2</p>
-                                                <p class="cartPlus d-flex align-items-center justify-content-center">
+                                                <p class="items"><span id="itemQuantity4">2</span></p>
+                                                <p id="cartPlus4" class="cartPlus d-flex align-items-center justify-content-center">
                                                     +
                                                 </p>
                                             </div>
@@ -254,7 +254,7 @@
                             <div class="col-md-10 col-sm-10 col-10">
                                 <div class="cart-font d-flex justify-content-between">
                                     <p>Gross Total</p>
-                                    <p>৳ 1200</p>
+                                    <p>৳ <span id="total">1200</span></p>
                                 </div>
                                 <br>
                                 <div class="text-center">
@@ -269,44 +269,34 @@
                 </div>
             </div>
         </div>
-
         <!-- single blog -->
         <section>
             <div class="container">
                 <div class="single-product">
                     <div class="row">
                         <div class="col-md-6">
-                            <img src="./images/blogs/blog4.jpeg" alt="">
-                            <!-- <div class="owl-carousel">
-                                <div class="item">
-                                    <img src="./images/blogs/blog4_1.png" alt="">
-                                </div>
-                                <div class="item">
-                                    <img src="./images/blogs/blog4_2.png" alt="">
-                                </div>
-                                <div class="item">
-                                    <img src="./images/blogs/blog4_1.png" alt="">
-                                </div>
-                                
-                            </div> -->
+                            <img id="main-image" src="./images/blogs/blog4.jpeg" alt="">
                             <div class="owl-carousel">
                                 <div class="item">
-                                    <img src="./images/blogs/blog4_2.png" alt="">
+                                    <img class="sub-images" src="./images/blogs/blog4_2.png" alt="">
                                 </div>
                                 <div class="item">
-                                    <img src="./images/blogs/blog4_2.png" alt="">
+                                    <img class="sub-images" src="./images/blogs/blog4_1.png" alt="">
                                 </div>
                                 <div class="item">
-                                    <img src="./images/blogs/blog4_1.png" alt="">
+                                    <img class="sub-images" src="./images/blogs/blog4_2.png" alt="">
                                 </div>
                                 <div class="item">
-                                    <img src="./images/blogs/blog4_2.png" alt="">
+                                    <img class="sub-images" src="./images/blogs/blog4_1.png" alt="">
                                 </div>
                                 <div class="item">
-                                    <img src="./images/blogs/blog4_2.png" alt="">
+                                    <img class="sub-images" src="./images/blogs/blog4_2.png" alt="">
                                 </div>
                                 <div class="item">
-                                    <img src="./images/blogs/blog4_1.png" alt="">
+                                    <img class="sub-images" src="./images/blogs/blog4_2.png" alt="">
+                                </div>
+                                <div class="item">
+                                    <img class="sub-images" src="./images/blogs/blog4_1.png" alt="">
                                 </div>
                             </div>
                         </div>
@@ -319,13 +309,13 @@
                             <div class="row">
                                 <div class="col-md-6 col-sm-6 col-6">
                                     <p class="single d-flex align-items-center justify-content-center">৳
-                                        200/kg</p>
+                                        <span id="itemTotal">200</span>/kg</p>
                                 </div>
                                 <div class="col-md-6 col-sm-6 col-6 d-flex align-items-center">
-                                    <p class="cartMinus d-flex align-items-center justify-content-center">-
+                                    <p id="minus" class="cartMinus d-flex align-items-center justify-content-center">-
                                     </p>
-                                    <p class="items">1</p>
-                                    <p class="cartPlus d-flex align-items-center justify-content-center">+
+                                    <p id="itemQuantity" class="items">1</p>
+                                    <p id="plus" class="cartPlus d-flex align-items-center justify-content-center">+
                                     </p>
                                 </div>
                             </div>
@@ -647,6 +637,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/cart.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -657,24 +648,7 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script>
-        $('.owl-carousel').owlCarousel({
-            loop: true,
-            margin: 10,
-            nav: true,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                400: {
-                    items: 2
-                },
-                600: {
-                    items: 3
-                }
-            }
-        })
-    </script>
+    <script src="./js/single-product-carousel.js"></script>
 </body>
 
 </html>
