@@ -41,13 +41,13 @@
                             </li>
                             <li class="nav-item single-line d-flex">
                                 <a class="nav-link cart-show">
-                                    <button data-toggle="modal" data-target="#cart" class="yellow-btn d-flex align-items-center justify-content-center">
+                                    <button data-toggle="modal" data-target="#cart" class="cart-image yellow-btn d-flex align-items-center justify-content-center">
                                         <img src="./images/icons/bcart.png" alt="">
                                     </button>
                                     <div class="red-dot"></div>
                                 </a>
                                 <a class="nav-link">
-                                    <button data-toggle="modal" data-target="#login" class="yellow-btn d-flex align-items-center justify-content-center">
+                                    <button data-toggle="modal" data-target="#login" class="people-image yellow-btn d-flex align-items-center justify-content-center">
                                         <img src="./images/icons/people.png" alt="">
                                     </button>
                                 </a>
@@ -278,7 +278,13 @@
                             <img id="main-image" src="./images/blogs/blog4.jpeg" alt="">
                             <div class="owl-carousel">
                                 <div class="item">
+                                    <img class="sub-images" src="./images/blogs/blog4_1.png" alt="">
+                                </div>
+                                <div class="item">
                                     <img class="sub-images" src="./images/blogs/blog4_2.png" alt="">
+                                </div>
+                                <div class="item">
+                                    <img class="sub-images" src="./images/blogs/blog4.jpeg" alt="">
                                 </div>
                                 <div class="item">
                                     <img class="sub-images" src="./images/blogs/blog4_1.png" alt="">
@@ -287,13 +293,7 @@
                                     <img class="sub-images" src="./images/blogs/blog4_2.png" alt="">
                                 </div>
                                 <div class="item">
-                                    <img class="sub-images" src="./images/blogs/blog4_1.png" alt="">
-                                </div>
-                                <div class="item">
-                                    <img class="sub-images" src="./images/blogs/blog4_2.png" alt="">
-                                </div>
-                                <div class="item">
-                                    <img class="sub-images" src="./images/blogs/blog4_2.png" alt="">
+                                    <img class="sub-images" src="./images/blogs/blog4.jpeg" alt="">
                                 </div>
                                 <div class="item">
                                     <img class="sub-images" src="./images/blogs/blog4_1.png" alt="">
@@ -307,15 +307,17 @@
                             </small>
                             <p></p>
                             <div class="row">
-                                <div class="col-md-6 col-sm-6 col-6">
+                                <div class="col-md-3 col-sm-3 col-4">
                                     <p class="single d-flex align-items-center justify-content-center">৳
                                         <span id="itemTotal">200</span>/kg</p>
                                 </div>
                                 <div class="col-md-6 col-sm-6 col-6 d-flex align-items-center">
-                                    <p id="minus" class="cartMinus d-flex align-items-center justify-content-center">-
+                                    <p id="minus" class="cartMinus d-flex align-items-center justify-content-center">
+                                        <span class="custom-font-size-minus">-</span>
                                     </p>
-                                    <p id="itemQuantity" class="items">1</p>
-                                    <p id="plus" class="cartPlus d-flex align-items-center justify-content-center">+
+                                    <p class="items"><span id="itemQuantity">1</span></p>
+                                    <p id="plus" class="cartPlus d-flex align-items-center justify-content-center">
+                                        <span class="custom-font-size-plus">+</span>
                                     </p>
                                 </div>
                             </div>

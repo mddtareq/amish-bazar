@@ -10,7 +10,6 @@ const minus2 = document.getElementById('cartMinus2');
 const minus3 = document.getElementById('cartMinus3');
 const minus4 = document.getElementById('cartMinus4');
 
-const itemTotal = document.getElementById('itemTotal');
 const itemTotal1 = document.getElementById('itemTotal1');
 const itemTotal2 = document.getElementById('itemTotal2');
 const itemTotal3 = document.getElementById('itemTotal3');
@@ -32,6 +31,13 @@ plus1.addEventListener('click', function () {
     addPrice('subTotal1', item1Quantity, onePrice);
     total('total', onePrice);
 })
+
+plus.addEventListener('click', function () {
+    const quantity = document.getElementById('itemQuantity').innerText;
+    const quantityNumber = parseInt(quantity);
+    const item1Quantity = addQuantity('itemQuantity', 1, quantityNumber);
+})
+
 plus2.addEventListener('click', function () {
     const quantity = document.getElementById('itemQuantity2').innerText;
 
@@ -59,6 +65,15 @@ plus4.addEventListener('click', function () {
     addPrice('subTotal4', item1Quantity, onePrice);
     total('total', onePrice);
 })
+
+minus.addEventListener('click', function () {
+    const quantity = document.getElementById('itemQuantity').innerText;
+    const quantityNumber = parseInt(quantity);
+    if (quantityNumber > 1) {
+    const item1Quantity = addQuantity('itemQuantity', -1, quantityNumber);
+    }
+})
+
 minus1.addEventListener('click', function () {
     const quantity = document.getElementById('itemQuantity1').innerText;
     const quantityNumber = parseInt(quantity);

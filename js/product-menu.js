@@ -50,8 +50,8 @@ const min = slider.min
 const max = slider.max
 const value = slider.value
 
-slider.style.background = `linear-gradient(to right, #FFC729 0%, #FC6E51 ${(value - min) / (max - min) * 100}%, #DEE2E6 ${(value - min) / (max - min) * 100}%, #DEE2E6 100%)`
+slider.style.background = `linear-gradient(to right,  #FC6E51 0%, #FC6E51 ${(value - min) / (max - min) * 100}%, #DEE2E6 ${(value - min) / (max - min) * 100}%, #DEE2E6 100%)`
 
 slider.oninput = function () {
-  this.style.background = `linear-gradient(to right, #FFC729 0%, #FC6E51 ${(this.value - this.min) / (this.max - this.min) * 100}%, #DEE2E6 ${(this.value - this.min) / (this.max - this.min) * 100}%, #DEE2E6 100%)`
+  this.style.background = `linear-gradient(to right,  #FC6E51 0%, #FC6E51 ${(this.value - this.min) / (this.max - this.min) * 100}%, #DEE2E6 ${(this.value - this.min) / (this.max - this.min) * 100}%, #DEE2E6 100%)`
 };
