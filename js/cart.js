@@ -1,10 +1,10 @@
-const plus = document.getElementById('plus');
+
 const plus1 = document.getElementById('cartPlus1');
 const plus2 = document.getElementById('cartPlus2');
 const plus3 = document.getElementById('cartPlus3');
 const plus4 = document.getElementById('cartPlus4');
 
-const minus = document.getElementById('minus');
+
 const minus1 = document.getElementById('cartMinus1');
 const minus2 = document.getElementById('cartMinus2');
 const minus3 = document.getElementById('cartMinus3');
@@ -32,11 +32,6 @@ plus1.addEventListener('click', function () {
     total('total', onePrice);
 })
 
-plus.addEventListener('click', function () {
-    const quantity = document.getElementById('itemQuantity').innerText;
-    const quantityNumber = parseInt(quantity);
-    const item1Quantity = addQuantity('itemQuantity', 1, quantityNumber);
-})
 
 plus2.addEventListener('click', function () {
     const quantity = document.getElementById('itemQuantity2').innerText;
@@ -66,13 +61,7 @@ plus4.addEventListener('click', function () {
     total('total', onePrice);
 })
 
-minus.addEventListener('click', function () {
-    const quantity = document.getElementById('itemQuantity').innerText;
-    const quantityNumber = parseInt(quantity);
-    if (quantityNumber > 1) {
-    const item1Quantity = addQuantity('itemQuantity', -1, quantityNumber);
-    }
-})
+
 
 minus1.addEventListener('click', function () {
     const quantity = document.getElementById('itemQuantity1').innerText;
