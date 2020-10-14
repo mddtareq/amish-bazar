@@ -17,39 +17,41 @@
             <nav class="navbar navbar-expand-md navbar-light bg-white">
                 <div class="container">
                     <a class="navbar-brand" href="index.html"><img src="./images/logos/logo.png" alt=""></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item ">
-                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="shop.html">Shop</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="blog.html">Blog</a>
-                        </li>
-                        <li class="nav-item single-line d-flex">
-                            <a class="nav-link cart-show">
-                                <button data-toggle="modal" data-target="#cart" class="cart-image yellow-btn d-flex align-items-center justify-content-center">
-                                    <img src="./images/icons/bcart.png" alt="">
-                                </button>
-                                <div class="red-dot"></div>
-                            </a>
-                            <a class="nav-link">
-                                <button data-toggle="modal" data-target="#login" class="people-image yellow-btn d-flex align-items-center justify-content-center">
-                                    <img src="./images/icons/people.png" alt="">
-                                </button>
-                            </a>
-                        </li>
-                    </ul>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item ">
+                                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="shop.html">Shop</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="blog.html">Blog</a>
+                            </li>
+                            <li class="nav-item single-line d-flex">
+                                <a class="nav-link cart-show">
+                                    <button data-toggle="modal" data-target="#cart"
+                                        class="cart-image yellow-btn d-flex align-items-center justify-content-center">
+                                        <img src="./images/icons/bcart.png" alt="">
+                                    </button>
+                                    <div class="red-dot"></div>
+                                </a>
+                                <a class="nav-link">
+                                    <button data-toggle="modal" data-target="#login"
+                                        class="people-image yellow-btn d-flex align-items-center justify-content-center">
+                                        <img src="./images/icons/people.png" alt="">
+                                    </button>
+                                </a>
+                            </li>
+                        </ul>
 
-                </div>
+                    </div>
                 </div>
             </nav>
         </div>
@@ -57,7 +59,7 @@
     <br><br>
     <main>
 
-             <!-- modal login -->
+        <!-- modal login -->
 
         <!-- Modal -->
         <div id="login" class="modal fade" role="dialog">
@@ -134,136 +136,144 @@
 
         <!-- modal cart -->
 
-       <!-- Modal -->
-       <div class="modal fade" id="cart">
-        <div class="modal-dialog modal-dialog-centered modal-md">
-            <div class="modal-content">
-                <div class="cart-items">
-                    <br>
-                    <h4 class="text-center">My Cart</h4>
-                    <p></p>
-                    <hr>
-                    <p></p>
-                    <br>
-                    <div class="row modal-button ">
-                        <div class="col-md-1 col-sm-1 col-1"></div>
-                        <div class="col-md-10 col-sm-10 col-10">
-                            <div class="row">
-                                <div class="cart-font col-md-8 col-sm-8 col-8">Chicken Meat</div>
-                                <div class="col-md-4 col-sm-4 col-4">৳ <span id="subTotal1">400</span></div>
-                                <div class="col-md-10 col-sm-8 col-10">
-                                    <p></p>
-                                    <div class="row ">
-                                        <div class="col-md-5 col-sm-6 col-5">
-                                            <p class="single d-flex align-items-center justify-content-center">৳
-                                                <span id="itemTotal1">200</span>/kg</p>
+        <!-- Modal -->
+        <div class="modal fade" id="cart">
+            <div class="modal-dialog modal-dialog-centered modal-md">
+                <div class="modal-content">
+                    <div class="cart-items">
+                        <br>
+                        <h4 class="text-center">My Cart</h4>
+                        <p></p>
+                        <hr>
+                        <p></p>
+                        <br>
+                        <div class="row modal-button ">
+                            <div class="col-md-1 col-sm-1 col-1"></div>
+                            <div class="col-md-10 col-sm-10 col-10">
+                                <div class="row">
+                                    <div class="cart-font col-md-8 col-sm-8 col-8">Chicken Meat</div>
+                                    <div class="col-md-4 col-sm-4 col-4">৳ <span id="subTotal1">400</span></div>
+                                    <div class="col-md-10 col-sm-8 col-10">
+                                        <p></p>
+                                        <div class="row ">
+                                            <div class="col-md-5 col-sm-6 col-5">
+                                                <p class="single d-flex align-items-center justify-content-center">৳
+                                                    <span id="itemTotal1">200</span>/kg</p>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-7 d-flex align-items-center">
+                                                <p id="cartMinus1"
+                                                    class="cartMinus d-flex align-items-center justify-content-center">
+                                                    <span class="custom-font-size-minus">-</span>
+                                                </p>
+                                                <p class="items"><span id="itemQuantity1">2</span></p>
+                                                <p id="cartPlus1"
+                                                    class="cartPlus d-flex justify-content-center align-items-center ">
+                                                    <span class="custom-font-size-plus">+</span>
+                                                </p>
+                                            </div>
                                         </div>
-                                        <div class="col-md-6 col-sm-6 col-7 d-flex align-items-center">
-                                            <p id="cartMinus1" class="cartMinus d-flex align-items-center justify-content-center">
-                                                <span class="custom-font-size-minus">-</span>
-                                            </p>
-                                            <p class="items"><span id="itemQuantity1">2</span></p>
-                                            <p id="cartPlus1" class="cartPlus d-flex justify-content-center align-items-center ">
-                                                <span class="custom-font-size-plus">+</span>
-                                            </p>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="cart-font col-md-8 col-sm-8 col-8">Chicken Meat</div>
+                                    <div class="col-md-4 col-sm-4 col-4">৳ <span id="subTotal2">400</span></div>
+                                    <div class="col-md-10 col-sm-8 col-10">
+                                        <p></p>
+                                        <div class="row">
+                                            <div class="col-md-5 col-sm-6 col-5">
+                                                <p class="single d-flex align-items-center justify-content-center">৳
+                                                    <span id="itemTotal2">200</span>/kg</p>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-7 d-flex align-items-center">
+                                                <p id="cartMinus2"
+                                                    class="cartMinus d-flex align-items-center justify-content-center">
+                                                    <span class="custom-font-size-minus">-</span>
+                                                </p>
+                                                <p class="items"><span id="itemQuantity2">2</span></p>
+                                                <p id="cartPlus2"
+                                                    class="cartPlus d-flex align-items-center justify-content-center">
+                                                    <span class="custom-font-size-plus">+</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="cart-font col-md-8 col-sm-8 col-8">Chicken Meat</div>
+                                    <div class="col-md-4 col-sm-4 col-4">৳ <span id="subTotal3">400</span></div>
+                                    <div class="col-md-10 col-sm-8 col-10">
+                                        <p></p>
+                                        <div class="row">
+                                            <div class="col-md-5 col-sm-6 col-5">
+                                                <p class="single d-flex align-items-center justify-content-center">৳
+                                                    <span id="itemTotal3">200</span>/kg</p>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-7 d-flex align-items-center">
+                                                <p id="cartMinus3"
+                                                    class="cartMinus d-flex align-items-center justify-content-center">
+                                                    <span class="custom-font-size-minus">-</span>
+                                                </p>
+                                                <p class="items"><span id="itemQuantity3">2</span></p>
+                                                <p id="cartPlus3"
+                                                    class="cartPlus d-flex align-items-center justify-content-center">
+                                                    <span class="custom-font-size-plus">+</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="cart-font col-md-8 col-sm-8 col-8">Chicken Meat</div>
+                                    <div class="col-md-4 col-sm-4 col-4">৳ <span id="subTotal4">400</span></div>
+                                    <div class="col-md-10 col-sm-8 col-10">
+                                        <p></p>
+                                        <div class="row">
+                                            <div class="col-md-5 col-sm-6 col-5">
+                                                <p class="single d-flex align-items-center justify-content-center">৳
+                                                    <span id="itemTotal4">200</span>/kg</p>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-7 d-flex align-items-center">
+                                                <p id="cartMinus4"
+                                                    class="cartMinus d-flex align-items-center justify-content-center">
+                                                    <span class="custom-font-size-minus">-</span>
+                                                </p>
+                                                <p class="items"><span id="itemQuantity4">2</span></p>
+                                                <p id="cartPlus4"
+                                                    class="cartPlus d-flex align-items-center justify-content-center">
+                                                    <span class="custom-font-size-plus">+</span>
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <hr>
-                            <div class="row">
-                                <div class="cart-font col-md-8 col-sm-8 col-8">Chicken Meat</div>
-                                <div class="col-md-4 col-sm-4 col-4">৳ <span id="subTotal2">400</span></div>
-                                <div class="col-md-10 col-sm-8 col-10">
-                                    <p></p>
-                                    <div class="row">
-                                        <div class="col-md-5 col-sm-6 col-5">
-                                            <p class="single d-flex align-items-center justify-content-center">৳
-                                                <span id="itemTotal2">200</span>/kg</p>
-                                        </div>
-                                        <div class="col-md-6 col-sm-6 col-7 d-flex align-items-center">
-                                            <p id="cartMinus2" class="cartMinus d-flex align-items-center justify-content-center">
-                                                <span class="custom-font-size-minus">-</span>
-                                            </p>
-                                            <p class="items"><span id="itemQuantity2">2</span></p>
-                                            <p id="cartPlus2" class="cartPlus d-flex align-items-center justify-content-center">
-                                                <span class="custom-font-size-plus">+</span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="row">
-                                <div class="cart-font col-md-8 col-sm-8 col-8">Chicken Meat</div>
-                                <div class="col-md-4 col-sm-4 col-4">৳ <span id="subTotal3">400</span></div>
-                                <div class="col-md-10 col-sm-8 col-10">
-                                    <p></p>
-                                    <div class="row">
-                                        <div class="col-md-5 col-sm-6 col-5">
-                                            <p class="single d-flex align-items-center justify-content-center">৳
-                                                <span id="itemTotal3">200</span>/kg</p>
-                                        </div>
-                                        <div class="col-md-6 col-sm-6 col-7 d-flex align-items-center">
-                                            <p id="cartMinus3" class="cartMinus d-flex align-items-center justify-content-center">
-                                                <span class="custom-font-size-minus">-</span>
-                                            </p>
-                                            <p class="items"><span id="itemQuantity3">2</span></p>
-                                            <p id="cartPlus3" class="cartPlus d-flex align-items-center justify-content-center">
-                                                <span class="custom-font-size-plus">+</span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="row">
-                                <div class="cart-font col-md-8 col-sm-8 col-8">Chicken Meat</div>
-                                <div class="col-md-4 col-sm-4 col-4">৳ <span id="subTotal4">400</span></div>
-                                <div class="col-md-10 col-sm-8 col-10">
-                                    <p></p>
-                                    <div class="row">
-                                        <div class="col-md-5 col-sm-6 col-5">
-                                            <p class="single d-flex align-items-center justify-content-center">৳
-                                                <span id="itemTotal4">200</span>/kg</p>
-                                        </div>
-                                        <div class="col-md-6 col-sm-6 col-7 d-flex align-items-center">
-                                            <p id="cartMinus4" class="cartMinus d-flex align-items-center justify-content-center">
-                                                <span class="custom-font-size-minus">-</span>
-                                            </p>
-                                            <p class="items"><span id="itemQuantity4">2</span></p>
-                                            <p id="cartPlus4" class="cartPlus d-flex align-items-center justify-content-center">
-                                                <span class="custom-font-size-plus">+</span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-1"></div>
+                            <div class="col-md-1"></div>
 
-                        <div class="col-md-12">
-                            <hr>
-                        </div>
-                        <div class="col-md-1 col-sm- col-1"></div>
-                        <div class="col-md-10 col-sm-10 col-10">
-                            <div class="cart-font d-flex justify-content-between">
-                                <p>Gross Total</p>
-                                <p>৳ <span id="total">1200</span></p>
+                            <div class="col-md-12">
+                                <hr>
                             </div>
-                            <br>
-                            <div class="text-center">
-                                <button class="yellow-btn">Checkout</button>
+                            <div class="col-md-1 col-sm- col-1"></div>
+                            <div class="col-md-10 col-sm-10 col-10">
+                                <div class="cart-font d-flex justify-content-between">
+                                    <p>Gross Total</p>
+                                    <p>৳ <span id="total">1200</span></p>
+                                </div>
+                                <br>
+                                <div class="text-center">
+                                    <button class="yellow-btn">Checkout</button>
+                                </div>
+                                <br>
                             </div>
-                            <br>
+                            <div class="col-md-1"></div>
                         </div>
-                        <div class="col-md-1"></div>
+                        <br>
                     </div>
-                    <br>
                 </div>
             </div>
         </div>
-    </div>
 
         <!-- blog -->
         <section>
@@ -278,8 +288,10 @@
                                 <h4><a href="singleBlog.html">Chicken is important</a></h4>
                                 <small>Suva Karmaker | 6 June, 2020</small>
                                 <p></p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. At lacus neque, nisl, morbi non
-                                    non metus nulla nibh. Morbi commodo tempor lorem tempor maecenas. Fermentum et sapien
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. At lacus neque, nisl, morbi
+                                    non
+                                    non metus nulla nibh. Morbi commodo tempor lorem tempor maecenas. Fermentum et
+                                    sapien
                                     ipsum vulputate blandit dignissim mi, feugiat eu. Id est auctor tristique nam ipsum,
                                     viverra et. Fermentum ultrices tortor pharetra ut congue.
                                 </p>
@@ -288,8 +300,10 @@
                                 <h4><a href="singleBlog.html">Chicken is important</a></h4>
                                 <small>Suva Karmaker | 6 June, 2020</small>
                                 <p></p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. At lacus neque, nisl, morbi non
-                                    non metus nulla nibh. Morbi commodo tempor lorem tempor maecenas. Fermentum et sapien
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. At lacus neque, nisl, morbi
+                                    non
+                                    non metus nulla nibh. Morbi commodo tempor lorem tempor maecenas. Fermentum et
+                                    sapien
                                     ipsum vulputate blandit dignissim mi, feugiat eu. Id est auctor tristique nam ipsum,
                                     viverra et. Fermentum ultrices tortor pharetra ut congue.
                                 </p>
@@ -314,7 +328,7 @@
                             <div class="blog-info">
                                 <img src="./images/blogs/blog1.jpeg" alt="">
                                 <div class="blog-details">
-                                    <h6>Chicken is important</h6>
+                                    <a href="singleBlog.html"><h6>Chicken is important</h6></a>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, maiores.
                                     </p>
                                     <small>23 January, 2020</small>
@@ -325,7 +339,7 @@
                             <div class="blog-info">
                                 <img src="./images/blogs/blog2.jpeg" alt="">
                                 <div class="blog-details">
-                                    <h6>Dul risus</h6>
+                                    <a href="singleBlog.html"><h6>Dul risus</h6></a>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, maiores.
                                     </p>
                                     <small>23 January, 2020</small>
@@ -336,7 +350,7 @@
                             <div class="blog-info">
                                 <img src="./images/blogs/blog3.jpeg" alt="">
                                 <div class="blog-details">
-                                    <h6>Elementum cras</h6>
+                                    <a href="singleBlog.html"><h6>Elementum cras</h6></a>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, maiores.
                                     </p>
                                     <small>23 January, 2020</small>
@@ -347,7 +361,7 @@
                             <div class="blog-info">
                                 <img src="./images/blogs/blog3.jpeg" alt="">
                                 <div class="blog-details">
-                                    <h6>Delicious prawn</h6>
+                                    <a href="singleBlog.html"><h6>Delicious prawn</h6></a>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, maiores.
                                     </p>
                                     <small>23 January, 2020</small>
@@ -358,7 +372,7 @@
                             <div class="blog-info">
                                 <img src="./images/blogs/blog1.jpeg" alt="">
                                 <div class="blog-details">
-                                    <h6>Rui mach</h6>
+                                    <a href="singleBlog.html"><h6>Rui mach</h6></a>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, maiores.
                                     </p>
                                     <small>23 January, 2020</small>
@@ -369,7 +383,7 @@
                             <div class="blog-info">
                                 <img src="./images/blogs/blog2.jpeg" alt="">
                                 <div class="blog-details">
-                                    <h6>lamb stack</h6>
+                                    <a href="singleBlog.html"><h6>lamb stack</h6></a>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, maiores.
                                     </p>
                                     <small>23 January, 2020</small>
@@ -379,7 +393,7 @@
                     </div>
                     <br>
                     <br>
-        <br>
+                    <br>
                     <hr>
                 </div>
             </div>
@@ -396,7 +410,9 @@
                                 <div class="product cart">
                                     <img src="./images/shop-items/amish1.png" alt="">
                                     <div class="product-info text-center">
-                                        <h6>Beef Raw Meat</h6>
+                                        <a href="singleProduct.html">
+                                            <h6>Beef Raw Meat</h6>
+                                        </a>
                                         <small>500 gm</small>
                                         <br>
                                         <strong>৳ 350</strong>
@@ -408,7 +424,9 @@
                                 <div class="product cart">
                                     <img src="./images/shop-items/amish1.png" alt="">
                                     <div class="product-info text-center">
-                                        <h6>Beef Raw Meat</h6>
+                                        <a href="singleProduct.html">
+                                            <h6>Beef Raw Meat</h6>
+                                        </a>
                                         <small>500 gm</small>
                                         <br>
                                         <strong>৳ 350</strong>
@@ -420,7 +438,9 @@
                                 <div class="product cart">
                                     <img src="./images/shop-items/amish1.png" alt="">
                                     <div class="product-info text-center">
-                                        <h6>Beef Raw Meat</h6>
+                                        <a href="singleProduct.html">
+                                            <h6>Beef Raw Meat</h6>
+                                        </a>
                                         <small>500 gm</small>
                                         <br>
                                         <strong>৳ 350</strong>
@@ -432,7 +452,9 @@
                                 <div class="product cart">
                                     <img src="./images/shop-items/amish1.png" alt="">
                                     <div class="product-info text-center">
-                                        <h6>Beef Raw Meat</h6>
+                                        <a href="singleProduct.html">
+                                            <h6>Beef Raw Meat</h6>
+                                        </a>
                                         <small>500 gm</small>
                                         <br>
                                         <strong>৳ 350</strong>
@@ -444,7 +466,9 @@
                                 <div class="product cart">
                                     <img src="./images/shop-items/amish1.png" alt="">
                                     <div class="product-info text-center">
-                                        <h6>Beef Raw Meat</h6>
+                                        <a href="singleProduct.html">
+                                            <h6>Beef Raw Meat</h6>
+                                        </a>
                                         <small>500 gm</small>
                                         <br>
                                         <strong>৳ 350</strong>
@@ -456,7 +480,9 @@
                                 <div class="product cart">
                                     <img src="./images/shop-items/amish1.png" alt="">
                                     <div class="product-info text-center">
-                                        <h6>Beef Raw Meat</h6>
+                                        <a href="singleProduct.html">
+                                            <h6>Beef Raw Meat</h6>
+                                        </a>
                                         <small>500 gm</small>
                                         <br>
                                         <strong>৳ 350</strong>
@@ -468,7 +494,9 @@
                                 <div class="product cart">
                                     <img src="./images/shop-items/amish1.png" alt="">
                                     <div class="product-info text-center">
-                                        <h6>Beef Raw Meat</h6>
+                                        <a href="singleProduct.html">
+                                            <h6>Beef Raw Meat</h6>
+                                        </a>
                                         <small>500 gm</small>
                                         <br>
                                         <strong>৳ 350</strong>
@@ -480,7 +508,9 @@
                                 <div class="product cart">
                                     <img src="./images/shop-items/amish1.png" alt="">
                                     <div class="product-info text-center">
-                                        <h6>Beef Raw Meat</h6>
+                                        <a href="singleProduct.html">
+                                            <h6>Beef Raw Meat</h6>
+                                        </a>
                                         <small>500 gm</small>
                                         <br>
                                         <strong>৳ 350</strong>
