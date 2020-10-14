@@ -15,14 +15,14 @@ for(let i = 0; i< items.length; i++){
 }
 
 $('.owl-carousel').owlCarousel({
-    loop: true,
+    loop: false,
     margin: 10,
     nav: true,
     responsive: {
         0: {
             items: 1
         },
-        400: {
+        300: {
             items: 2
         },
         600: {
