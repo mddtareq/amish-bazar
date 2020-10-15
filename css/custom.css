@@ -926,7 +926,6 @@ input[type="range"] {
 .single{
     overflow: hidden;
     font-size: 14px;
-    margin-top: 2px;
     height: 25px;
     width: 80px;
     border-radius: 25px;
@@ -975,7 +974,6 @@ input[type="range"] {
 }
 
 .items{
-    margin-top:-1px;
     font-size: 15px;
     margin-left: 10px;
     margin-right: 10px;
