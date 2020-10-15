@@ -908,6 +908,10 @@ input[type="range"] {
 
 /* cart modal*/
 
+#no-items{
+    display: none;
+}
+
 .cart-items h4{
     padding-top:10px;
 }
@@ -927,6 +931,12 @@ input[type="range"] {
     width: 80px;
     border-radius: 25px;
     background-color:#FFC729;
+}
+
+.custom-font-size-cross{
+    font-weight: 500;
+    margin-top:-5px;
+    margin-left: -1px;
 }
 
 .custom-font-size-minus{
@@ -951,6 +961,15 @@ input[type="range"] {
 }
 
 .cartMinus{
+    font-size: 20px;
+    border-radius: 100%;
+    height: 25px;
+    width: 25px;
+    background-color:rgba(128, 128, 128, 0.301);
+    cursor: pointer;
+}
+
+.cartCross{
     font-size: 20px;
     border-radius: 100%;
     height: 25px;
@@ -1069,6 +1088,9 @@ input[type="range"] {
     #cart .modal-dialog{
         margin-top:50px;
         width: 94%!important;
+    }
+    .single{
+        width: 65px;
     }
 }
 
