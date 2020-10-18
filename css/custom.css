@@ -942,18 +942,18 @@ input[type="range"] {
     cursor: pointer;
 }
 .cartMinus img{
-    height: 12px;
-    width:12px;
+    height: 13px;
+    width:13px;
 }
 
 .cartPlus img{
-    height: 12px;
-    width:12px;
+    height: 13px;
+    width:13px;
 }
 
 .cartCross img{
-    height: 12px;
-    width:12px;
+    height: 13px;
+    width:13px;
 }
 
 .cartMinus{
