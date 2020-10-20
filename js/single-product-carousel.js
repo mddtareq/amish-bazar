@@ -3,7 +3,7 @@ const items =document.getElementsByClassName('sub-images');
 
 for(let i = 0; i< items.length; i++){
     items[i].onclick=function () {
-        let item = items[0];
+        let item = items[i];
         while(item){
             if(item.tagName==='IMG'){
                 let item1=$(this).attr('src');
