@@ -367,12 +367,16 @@ header{
     font-size:12px;
 }
 
+.product-item-quantity{
+    margin-right: 5px;
+}
+
 .page-plus{
-    border-radius:0px 0px 0px 5px;
+    border-radius:0px 0px 5px 0px;
 }
 
 .page-minus{
-    border-radius:0px 0px 5px 0px;
+    border-radius:0px 0px 0px 5px;
 }
 
 .products{

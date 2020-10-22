@@ -507,13 +507,16 @@
                                         <br>
                                         <strong>৳ 350</strong>
                                     </div>
-                                    <div class="plus-minus d-flex ">
-                                        <button class="page-plus"><strong
-                                                class="d-flex align-items-center justify-content-center">-</strong></button>
-                                        <p class="d-flex align-items-center justify-content-center">Add to Cart</p>
-                                        <button class="page-minus"><strong
-                                                class="d-flex align-items-center justify-content-center">+</strong></button>
+                                    <div id="item-plus" class="">
+                                        <div class="plus-minus d-flex ">
+                                            <button id="product-minus" class="page-minus"><strong
+                                                    class="d-flex align-items-center justify-content-center">-</strong></button>
+                                            <p class="d-flex align-items-center justify-content-center"><span id="product-item-quantity">1</span> in Cart</p>
+                                            <button id="product-plus" class="page-plus"><strong
+                                                    class="d-flex align-items-center justify-content-center">+</strong></button>
+                                        </div>
                                     </div>
+                                    <button id='item-zero' class="yellow-btn">Add to cart</button>
                                 </div>
                             </div>
                             <div class="col-md-4 col-lg-3 col-12 col-sm-6">
@@ -726,6 +729,7 @@
 
     <script src="./js/cart.js"></script>
     <script src="./js/single-product-js.js"></script>
+    <script src="./js/add-to-cart.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous">

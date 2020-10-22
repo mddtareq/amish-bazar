@@ -19,7 +19,7 @@
         <div class="fixed-top">
             <nav class="navbar navbar-expand-md navbar-light bg-white">
                 <div class="container">
-                    <a id="off-btn" ><img src="./images/icons/menu.png" alt=""></a>
+                    <a id="off-btn"><img src="./images/icons/menu.png" alt=""></a>
                     <a class="navbar-brand" href="index.html"><img src="./images/logos/logo.png" alt=""></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -40,13 +40,15 @@
                             </li>
                             <li class="nav-item single-line d-flex">
                                 <a class="nav-link cart-show">
-                                    <button data-toggle="modal" data-target="#cart" class="cart-image yellow-btn d-flex align-items-center justify-content-center">
+                                    <button data-toggle="modal" data-target="#cart"
+                                        class="cart-image yellow-btn d-flex align-items-center justify-content-center">
                                         <img src="./images/icons/bcart.png" alt="">
                                     </button>
                                     <div class="red-dot"></div>
                                 </a>
                                 <a class="nav-link">
-                                    <button data-toggle="modal" data-target="#login" class="people-image yellow-btn d-flex align-items-center justify-content-center">
+                                    <button data-toggle="modal" data-target="#login"
+                                        class="people-image yellow-btn d-flex align-items-center justify-content-center">
                                         <img src="./images/icons/people.png" alt="">
                                     </button>
                                 </a>
@@ -165,7 +167,8 @@
                                                         <span id="itemTotal1">200</span>/kg</p>
                                                 </div>
                                                 <div class="col-md-4 col-sm-6 col-6 d-flex align-items-center">
-                                                    <p id="cartMinus1" class="cartMinus d-flex align-items-center justify-content-center">
+                                                    <p id="cartMinus1"
+                                                        class="cartMinus d-flex align-items-center justify-content-center">
                                                         <img src="./images/icons/minus.png" alt="">
                                                     </p>
                                                     <p class="items"><span id="itemQuantity1">2</span></p>
@@ -283,7 +286,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div id='no-items' class="text-center"><h5>No Items in Cart</h5></div>
+                                <div id='no-items' class="text-center">
+                                    <h5>No Items in Cart</h5>
+                                </div>
                             </div>
                             <div class="col-md-1"></div>
 
@@ -315,16 +320,19 @@
         <div class="fix">
             <a data-toggle="modal" data-target="#cart">
                 <img src="./images/icons/fix.png" alt="">
-            <div class="fix-info">
-                <p>50 Items</p>
-                <h6>৳ 45000</h6>
-            </div>
+                <div class="fix-info">
+                    <p>50 Items</p>
+                    <h6>৳ 45000</h6>
+                </div>
             </a>
         </div>
 
         <!-- all products -->
 
         <div class="container-lg shop-products">
+
+            <!-- sidebar -->
+
             <div id="see-side" class="see-side">
                 <!-- <div id="mySidenav" class="sidenav"> -->
                 <div id="custom" class="custom">
@@ -369,15 +377,18 @@
                         <p>Fish</p>
                     </a>
                     <br>
-                <div id="range" class="range">
-                    <h6>Price Range</h6>
-                    <input type="range" id="myinput" min="200" max="1000">
-                    <br>
-                    <small>৳ 200 - 1000</small>
+                    <div id="range" class="range">
+                        <h6>Price Range</h6>
+                        <input type="range" id="myinput" min="200" max="1000">
+                        <br>
+                        <small>৳ 200 - 1000</small>
+                    </div>
                 </div>
-                </div>
-                
+
             </div>
+
+            <!-- products -->
+
             <div id="all-products" class="row all-products products">
                 <div class="col-md-4 col-lg-4 col-12 col-sm-6">
                     <div class="product cart">
@@ -388,13 +399,17 @@
                             <br>
                             <strong>৳ 350</strong>
                         </div>
-                        <div class="plus-minus d-flex ">
-                                        <button class="page-plus"><strong
-                                                class="d-flex align-items-center justify-content-center">-</strong></button>
-                                        <p class="d-flex align-items-center justify-content-center">Add to Cart</p>
-                                        <button class="page-minus"><strong
-                                                class="d-flex align-items-center justify-content-center">+</strong></button>
-                                    </div>
+                        <div id="item-plus" class="">
+                            <div class="plus-minus d-flex ">
+                                <button id="product-minus" class="page-minus"><strong
+                                        class="d-flex align-items-center justify-content-center">-</strong></button>
+                                <p class="d-flex align-items-center justify-content-center"><span
+                                        id="product-item-quantity">1</span> in Cart</p>
+                                <button id="product-plus" class="page-plus"><strong
+                                        class="d-flex align-items-center justify-content-center">+</strong></button>
+                            </div>
+                        </div>
+                        <button id='item-zero' class="yellow-btn">Add to cart</button>
                     </div>
                 </div>
                 <div class="col-md-4 col-lg-4 col-12 col-sm-6">
@@ -495,13 +510,27 @@
                 </div>
                 <div class="col-md-12">
                     <div class="pagination-custom text-center">
-                        <a href=""><p>1</p></a>
-                        <a class="red" href=""><p>2</p></a>
-                        <a href=""><p>3</p></a>
-                        <a href=""><p>...</p></a>
-                        <a href=""><p>20</p></a>
-                        <a href=""><p>21</p></a>
-                        <a href=""><p>22</p></a>
+                        <a href="">
+                            <p>1</p>
+                        </a>
+                        <a class="red" href="">
+                            <p>2</p>
+                        </a>
+                        <a href="">
+                            <p>3</p>
+                        </a>
+                        <a href="">
+                            <p>...</p>
+                        </a>
+                        <a href="">
+                            <p>20</p>
+                        </a>
+                        <a href="">
+                            <p>21</p>
+                        </a>
+                        <a href="">
+                            <p>22</p>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -553,19 +582,17 @@
 
     <script src="./js/product-menu.js"></script>
     <script src="./js/cart.js"></script>
+    <script src="./js/add-to-cart.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous">
-    </script>
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+        </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous">
-    </script>
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+        </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous">
-    </script>
-    
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+        </script>
+
 </body>
 
 </html>
