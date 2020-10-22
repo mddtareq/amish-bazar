@@ -38,6 +38,7 @@ minusProduct.addEventListener('click', function (){
         addQuantity('product-item-quantity', -1, quantityNumber);
     }
     else{
+        addQuantity('product-item-quantity', -1, quantityNumber);
         itemZero.style.display='block';
         itemPlus.style.display='none';
     }
@@ -51,6 +52,7 @@ minusProduct1.addEventListener('click', function (){
         addQuantity('product-item-quantity1', -1, quantityNumber);
     }
     else{
+        addQuantity('product-item-quantity1', -1, quantityNumber);
         itemZero1.style.display='block';
         itemPlus1.style.display='none';
     }
@@ -60,11 +62,17 @@ minusProduct1.addEventListener('click', function (){
 // add cart product
 
 itemZero.addEventListener('click',function(){
+    const productQuantity=document.getElementById('product-item-quantity').innerText;
+    const quantityNumber = parseInt(productQuantity);
+    addQuantity('product-item-quantity', 1, quantityNumber);
     itemZero.style.display='none';
     itemPlus.style.display='block';
 })
 
 itemZero1.addEventListener('click',function(){
+    const productQuantity=document.getElementById('product-item-quantity1').innerText;
+    const quantityNumber = parseInt(productQuantity);
+    addQuantity('product-item-quantity1', 1, quantityNumber);
     itemZero1.style.display='none';
     itemPlus1.style.display='block';
 })
