@@ -1,11 +1,15 @@
 let totalItem = 3;
 const noItems = document.getElementById('no-items');
 
+// no items in cart
+
 function displayNone() {
     if (totalItem < 0) {
         noItems.style.display = 'block';
     }
 }
+
+// id declaration
 
 const plus1 = document.getElementById('cartPlus1');
 const plus2 = document.getElementById('cartPlus2');
@@ -41,6 +45,8 @@ const subTotal4 = document.getElementById('subTotal4');
 
 const totalPrice = document.getElementById('total');
 
+// cross handler
+
 cross1.addEventListener('click', function () {
     const subTotal = document.getElementById('subTotal1').innerText;
     const subTotalNumber = parseInt(subTotal);
@@ -50,7 +56,6 @@ cross1.addEventListener('click', function () {
     displayNone();
     item1.style.display = 'none';
 })
-
 cross2.addEventListener('click', function () {
     const subTotal = document.getElementById('subTotal2').innerText;
     const subTotalNumber = parseInt(subTotal);
@@ -60,7 +65,6 @@ cross2.addEventListener('click', function () {
     displayNone();
     item2.style.display = 'none';
 })
-
 cross3.addEventListener('click', function () {
     const subTotal = document.getElementById('subTotal3').innerText;
     const subTotalNumber = parseInt(subTotal);
@@ -70,7 +74,6 @@ cross3.addEventListener('click', function () {
     displayNone();
     item3.style.display = 'none';
 })
-
 cross4.addEventListener('click', function () {
     const subTotal = document.getElementById('subTotal4').innerText;
     const subTotalNumber = parseInt(subTotal);
@@ -81,6 +84,8 @@ cross4.addEventListener('click', function () {
     item4.style.display = 'none';
 })
 
+// plus handler
+
 plus1.addEventListener('click', function () {
     const quantity = document.getElementById('itemQuantity1').innerText;
     const quantityNumber = parseInt(quantity);
@@ -89,8 +94,6 @@ plus1.addEventListener('click', function () {
     addPrice('subTotal1', item1Quantity, onePrice);
     total('total', onePrice);
 })
-
-
 plus2.addEventListener('click', function () {
     const quantity = document.getElementById('itemQuantity2').innerText;
 
@@ -119,7 +122,7 @@ plus4.addEventListener('click', function () {
     total('total', onePrice);
 })
 
-
+// minus handler
 
 minus1.addEventListener('click', function () {
     const quantity = document.getElementById('itemQuantity1').innerText;
@@ -162,11 +165,16 @@ minus4.addEventListener('click', function () {
     }
 })
 
+// adding or removing Quantity
+
 function addQuantity(id, number, quantityNumber) {
     const updatedQuantity = quantityNumber + number;
     document.getElementById(id).innerText = updatedQuantity;
     return updatedQuantity;
 }
+
+// adding or removing price
+
 function addPrice(id, quantity, onePrice) {
     const price = document.getElementById(id).innerText;
     const priceNumber = parseFloat(price);
@@ -175,12 +183,16 @@ function addPrice(id, quantity, onePrice) {
     return updatedPrice;
 }
 
+// calculate single price
+
 function singlePrice(id, quantity) {
     const price = document.getElementById(id).innerText;
     const priceNumber = parseFloat(price);
     const singlePrice = priceNumber / quantity;
     return singlePrice;
 }
+
+// calculate total price
 
 function total(id, singlePrice) {
     const total = document.getElementById(id).innerText;

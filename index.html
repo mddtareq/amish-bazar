@@ -51,11 +51,12 @@
 
     </header>
 
-
     <main>
-               <!-- modal login -->
-
+               
         <!-- Modal -->
+
+        <!-- modal login -->
+
         <div id="login" class="modal fade" role="dialog">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
@@ -128,9 +129,8 @@
             </div>
         </div>
 
-                <!-- modal cart -->
+        <!-- modal cart -->
 
-        <!-- Modal -->
         <div class="modal fade" id="cart">
             <div class="modal-dialog modal-dialog-centered modal-md">
                 <div class="modal-content">
@@ -301,7 +301,6 @@
             </div>
         </div>
 
-
         <!-- introduction -->
 
         <section class="introduction">
@@ -338,7 +337,9 @@
             <div class="red-sh category text-center">
                 <h2>Shop by Category</h2>
                 <p></p>
-                <button class="red-btn">View All Products</button>
+                <div class="products-anchor">
+                    <button class="red-btn"><a href="shop.html">View All Products</a></button>
+                </div>
                 <br><br><br>
                 <div class="container">
                     <div class="all-category d-flex justify-content-center">
@@ -398,10 +399,10 @@
 
         <section>
             <div class="category container">
-                <div class="red-sh text-center">
+                <div class="red-sh text-center products-anchor">
                     <h2>Popular Products</h2>
                     <p></p>
-                    <button class="red-btn">View All Products</button>
+                    <button class="red-btn"><a href="shop.html">View All Products</a></button>
                 </div>
                 <br>
                 <div class="row products">
@@ -418,7 +419,7 @@
                             <div class="plus-minus d-flex ">
                                 <button class="page-plus"><strong
                                         class="d-flex align-items-center justify-content-center">-</strong></button>
-                                <p class="d-flex align-items-center justify-content-center">Add to Cart</p>
+                                <p class="d-flex align-items-center justify-content-center">1 in Cart</p>
                                 <button class="page-minus"><strong
                                         class="d-flex align-items-center justify-content-center">+</strong></button>
                             </div>
@@ -529,10 +530,10 @@
         <!-- blogs -->
 
         <section class="blog">
-            <div class="yellow-sh text-center">
+            <div class="yellow-sh text-center blog-anchor">
                 <h2>Our Blogs</h2>
                 <p>see our blog story to decide yourself</p>
-                <button class="red-btn">View All</button>
+                <button class="red-btn"><a href="blog.html">View All</a></button>
             </div>
             <br>
             <div class="container">
@@ -613,6 +614,8 @@
 
     </main>
 
+    <!-- footer -->
+
     <footer>
         <div class="footer">
             <br><br><br>
@@ -648,16 +651,22 @@
             </div>
         </div>
     </footer>
+
+    <!-- js file -->
+    
     <script src="./js/cart.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous">
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous">
+    </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous">
+    </script>
 
 </body>
 

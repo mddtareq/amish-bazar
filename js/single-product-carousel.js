@@ -1,3 +1,5 @@
+// slider image click to set to the main image
+
 const mainImage =document.getElementById('main-image');
 const items =document.getElementsByClassName('sub-images');
 
@@ -13,6 +15,8 @@ for(let i = 0; i< items.length; i++){
         }
     }
 }
+
+// owl carousel 
 
 $('.owl-carousel').owlCarousel({
     loop: false,

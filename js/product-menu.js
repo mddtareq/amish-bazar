@@ -1,6 +1,11 @@
+// id declaration
+
 const offBtn = document.getElementById('off-btn');
 const sideBar = document.getElementById('see-side');
 const products = document.getElementById('all-products');
+
+// sidebar on/off
+
 offBtn.addEventListener('click', function () {
   const width = window.innerWidth || document.documentElement.clientWidth ||
     document.body.clientWidth;
@@ -43,6 +48,8 @@ offBtn.addEventListener('click', function () {
   }
 })
 
+
+// sidebar input range modification 
 
 
 const slider = document.getElementById("myinput")
