@@ -1,16 +1,3 @@
-/* body */
-
-/* body{
-    
-} */
-@media only screen and (min-width: 440) and (max-width:575px){
-    .cus-col{
-        flex: 0 0 100%;
-        max-width: 50%!important;
-    }
-}
-
-
 /* header */
 
 /* navbar */
@@ -350,6 +337,11 @@ header{
 
 /* products */
 
+.products-anchor a{
+    color: white;
+    text-decoration: none;
+}
+
 .plus-minus button{
     font-size:20px;
     outline:none!important;
@@ -375,12 +367,16 @@ header{
     font-size:12px;
 }
 
+.product-item-quantity{
+    margin-right: 5px;
+}
+
 .page-plus{
-    border-radius:0px 0px 0px 5px;
+    border-radius:0px 0px 5px 0px;
 }
 
 .page-minus{
-    border-radius:0px 0px 5px 0px;
+    border-radius:0px 0px 0px 5px;
 }
 
 .products{
@@ -441,6 +437,11 @@ header{
     background-image: url(../images/bg/Group87.png),url(../images/bg/Group36.png);
     background-repeat: no-repeat;
     background-position:90% 80%,5% 60%;
+}
+
+.blog-anchor a{
+    color: black;
+    text-decoration: none;
 }
 
 .blog h2{
@@ -931,7 +932,6 @@ input[type="range"] {
     border-radius: 25px;
     background-color:#FFC729;
 }
-
 
 .cartPlus{
     font-size: 20px;
