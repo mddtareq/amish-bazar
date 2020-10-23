@@ -52,7 +52,6 @@ cross1.addEventListener('click', function () {
     const subTotalNumber = parseInt(subTotal);
     total('total', (-1 * subTotalNumber));
     totalItem--;
-    console.log(totalItem)
     displayNone();
     item1.style.display = 'none';
 })
@@ -61,7 +60,6 @@ cross2.addEventListener('click', function () {
     const subTotalNumber = parseInt(subTotal);
     total('total', (-1 * subTotalNumber));
     totalItem--;
-    console.log(totalItem)
     displayNone();
     item2.style.display = 'none';
 })
@@ -70,7 +68,6 @@ cross3.addEventListener('click', function () {
     const subTotalNumber = parseInt(subTotal);
     total('total', (-1 * subTotalNumber));
     totalItem--;
-    console.log(totalItem)
     displayNone();
     item3.style.display = 'none';
 })
@@ -79,7 +76,6 @@ cross4.addEventListener('click', function () {
     const subTotalNumber = parseInt(subTotal);
     total('total', (-1 * subTotalNumber));
     totalItem--;
-    console.log(totalItem)
     displayNone();
     item4.style.display = 'none';
 })
